@@ -1,0 +1,154 @@
+import Image from "next/image";
+
+function StarShape({ className, style }: { className?: string; style?: React.CSSProperties }) {
+  return (
+    <svg
+      className={className}
+      style={style}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M12 0l2.5 7.5L22 5.5l-5 5L24 12l-7.5 2.5L22 18.5l-7.5-2L12 24l-2.5-7.5L2 18.5l5-4L0 12l7.5-2.5L2 5.5l7.5 2L12 0z" />
+    </svg>
+  );
+}
+
+const profileItems = [
+  "Artistas con identidad definida",
+  "Proyectos en etapa de crecimiento",
+  "Talento listo para profesionalizarse",
+  "Equipos creativos con visión a largo plazo",
+];
+
+export function ProfileSection() {
+  return (
+    <section className="relative bg-[#5BA4D9] px-8 py-16 md:px-16 lg:px-32">
+      <div className="mx-auto flex max-w-4xl flex-col gap-10 lg:flex-row lg:items-start lg:gap-16">
+        {/* Columna izquierda: título + foto */}
+        <div className="flex flex-col gap-6 lg:w-1/2">
+          {/* Título con estrella y texto descriptivo posicionado encima */}
+          <div className="relative inline-block">
+            <h2 className="whitespace-pre-line text-4xl leading-[0.95] font-black uppercase tracking-tight text-black md:text-5xl lg:text-6xl">
+              {"No trabajamos con todos.\ny eso es intencional."}
+            </h2>
+            {/* Estrella/sol rojo - sobre el final de "intencional" */}
+            <StarShape
+              className="absolute bottom-0 z-30 h-14 w-14 text-[#E84D2E] md:h-16 md:w-16"
+              style={{ left: "calc(43% + 5.5rem)" }}
+            />
+            {/* Texto descriptivo al lado de la estrella */}
+            <div
+              className="absolute z-30"
+              style={{ left: "calc(44% + 10rem)", bottom: "-0.5rem" }}
+            >
+              <p className="relative whitespace-nowrap font-sans text-sm leading-tight text-white md:text-base">
+                {/* Mancha naranja en la esquina superior derecha del texto */}
+                <span
+                  className="absolute -top-10 -right-24 z-0 h-8 w-24 rotate-12 bg-[#E84D2E] md:-top-12 md:h-10 md:w-28"
+                  style={{
+                    clipPath: `polygon(
+                      12% 0%, 88% 0%,
+                      88% 10%, 92% 10%, 92% 25%, 96% 25%, 96% 42%, 100% 42%, 100% 58%, 96% 58%, 96% 75%, 92% 75%, 92% 90%, 88% 90%, 88% 100%,
+                      12% 100%, 12% 90%, 8% 90%, 8% 75%, 4% 75%, 4% 58%, 0% 58%, 0% 42%, 4% 42%, 4% 25%, 8% 25%, 8% 10%, 12% 10%
+                    )`,
+                  }}
+                />
+                <span className="relative z-10">
+                  Ktalisys trabaja con artistas y proyectos que entienden<br />
+                  que el talento necesita estructura, visión y disciplina<br />
+                  para crecer.
+                </span>
+              </p>
+            </div>
+
+            {/* Perfil ideal + lista posicionado debajo del texto descriptivo */}
+            <div
+              className="absolute z-30 flex flex-col gap-3"
+              style={{ left: "calc(44% + 10rem)", top: "calc(100% + 1.5rem)" }}
+            >
+              <div className="relative -ml-14 inline-flex self-start px-4 py-1.5">
+                <svg
+                  className="absolute inset-0 h-full w-full"
+                  viewBox="0 0 120 40"
+                  preserveAspectRatio="none"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                >
+                  <path
+                    d="M8 6 C20 3, 50 2, 80 4 C100 5, 115 7, 116 14 C117 22, 112 30, 95 33 C70 36, 40 37, 15 34 C6 33, 3 28, 4 20 C5 12, 7 8, 10 5"
+                    className="text-black"
+                  />
+                </svg>
+                <span className="relative font-sans text-sm uppercase tracking-widest text-white md:text-base">
+                  Perfil ideal
+                </span>
+              </div>
+              <ul className="ml-12 flex flex-col gap-7 pb-4">
+                {profileItems.map((item) => (
+                  <li key={item} className="whitespace-nowrap font-sans text-sm text-white md:text-base">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="ml-12 mt-4 max-w-md font-sans text-sm font-semibold uppercase leading-tight tracking-wide text-black md:text-base">
+                Si buscas solo exposición,<br />
+                este no es el lugar.<br />
+                Si buscas dirección, sí.
+              </p>
+              {/* Logo Ktalisys - vertical, orientado hacia arriba */}
+              <div
+                className="absolute flex items-center gap-2 text-black"
+                style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", left: "calc(100% + 8rem)", bottom: "0" }}
+              >
+                <span className="text-3xl font-bold italic tracking-tight md:text-4xl">Ktalisys</span>
+                <svg
+                  className="h-10 w-10 md:h-12 md:w-12"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <path d="M8 32V8h4v10l10-10h6L17 19l12 13h-6L13 20v12H8z" fill="currentColor" />
+                  <rect x="1" y="1" width="38" height="38" rx="4" stroke="currentColor" strokeWidth="2" fill="none" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Foto artista con decoraciones */}
+          <div className="relative ml-5 w-56 md:w-64">
+            <div className="relative aspect-[3/4] overflow-hidden">
+              <Image
+                src="/karol g.jpg"
+                alt="Karol G"
+                fill
+                className="object-cover"
+              />
+            </div>
+            {/* Estrella sobresaliendo a la mitad en la esquina inferior derecha */}
+            <StarShape className="absolute -right-8 bottom-4 z-30 h-16 w-16 text-[#E84D2E] md:-right-10 md:h-20 md:w-20" />
+            {/* Forma vertical escalonada sobresaliendo en la esquina superior izquierda */}
+            <span
+              className="absolute -left-5 top-8 z-30 h-28 w-10 bg-[#E84D2E] md:-left-6 md:h-32 md:w-12"
+              style={{
+                clipPath: `polygon(
+                  0% 12%, 0% 88%,
+                  10% 88%, 10% 92%, 25% 92%, 25% 96%, 42% 96%, 42% 100%, 58% 100%, 58% 96%, 75% 96%, 75% 92%, 90% 92%, 90% 88%, 100% 88%,
+                  100% 12%, 90% 12%, 90% 8%, 75% 8%, 75% 4%, 58% 4%, 58% 0%, 42% 0%, 42% 4%, 25% 4%, 25% 8%, 10% 8%, 10% 12%
+                )`,
+              }}
+            />
+          </div>
+        </div>
+
+      </div>
+
+      {/* Pie de sección - vacío, logo movido junto al texto */}
+      <div className="hidden">
+        <div className="flex items-center gap-2 text-black">
+          <span className="text-2xl font-bold italic tracking-tight">Ktalisys</span>
+        </div>
+      </div>
+    </section>
+  );
+}
