@@ -8,15 +8,17 @@ const STAIRS_CLIP = `polygon(
 
 export function FocusCtaSection() {
   return (
-    <section className="bg-black px-8 py-20 md:px-16 lg:px-24">
+    <section className="bg-black px-6 py-10 md:px-16 md:py-20 lg:px-24">
       <div className="mx-auto flex max-w-5xl justify-center">
         {/* Forma escalonada blanca con contenido adentro */}
         <div
-          className="relative flex h-72 w-full items-center bg-white md:h-80 lg:h-96"
+          className="relative flex min-h-[420px] w-full items-center bg-white sm:min-h-[460px] md:h-80 md:min-h-0 lg:h-96"
           style={{ clipPath: STAIRS_CLIP }}
         >
-          {/* Imagen al lado derecho (absoluta para que no desplace el texto) */}
-          <div className="absolute inset-y-0 right-0 w-1/2">
+          {/* Imagen al lado derecho (absoluta para que no desplace el texto)
+              En mobile aparece más pequeña en la esquina inferior derecha con baja opacidad
+              para no tapar el texto. En md+ ocupa la mitad derecha como en desktop. */}
+          <div className="pointer-events-none absolute right-0 bottom-0 h-40 w-1/2 opacity-40 sm:h-48 md:inset-y-0 md:h-auto md:opacity-100">
             <Image
               src="/YED.png"
               alt="YED"
@@ -26,8 +28,8 @@ export function FocusCtaSection() {
           </div>
 
           {/* Contenido en el lado izquierdo, centrado verticalmente */}
-          <div className="relative z-10 flex flex-col gap-4 pl-24 pr-8 md:pl-32 lg:pl-40">
-            <h3 className="whitespace-pre-line font-sans text-sm font-semibold uppercase leading-snug tracking-[0.3em] text-[#E84D2E] md:text-base">
+          <div className="relative z-10 flex flex-col gap-3 px-8 md:gap-4 md:pl-32 md:pr-8 lg:pl-40">
+            <h3 className="whitespace-pre-line font-sans text-sm font-semibold uppercase leading-snug tracking-[0.3em] text-[#E54529] md:text-base">
               {"Si este enfoque\nresuena contigo,\nconversemos"}
             </h3>
             <p className="whitespace-pre-line font-sans text-base font-bold leading-snug text-black md:text-lg">
@@ -42,7 +44,7 @@ export function FocusCtaSection() {
               </a>
               {/* Flecha naranja desde el botón */}
               <svg
-                className="h-14 w-28 text-[#E84D2E] md:h-16 md:w-32"
+                className="h-14 w-28 text-[#E54529] md:h-16 md:w-32"
                 viewBox="0 0 120 60"
                 fill="none"
                 stroke="currentColor"

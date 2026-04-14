@@ -65,10 +65,10 @@ const STEPS = [
 
 export function WorkStepsSection() {
   return (
-    <section className="bg-black py-16">
+    <section className="bg-black py-10 md:py-16">
       <div className="grid grid-cols-1 gap-0 lg:grid-cols-2">
         {/* Columna izquierda: cuadro naranja que llega al borde izquierdo */}
-        <div className="relative overflow-hidden bg-[#E84D2E] min-h-[500px]">
+        <div className="relative overflow-hidden bg-[#E54529] min-h-[300px] md:min-h-[500px]">
           <Image
             src="/jessi uribe.png"
             alt="Jessi Uribe"
@@ -84,20 +84,20 @@ export function WorkStepsSection() {
         </div>
 
         {/* Columna derecha: PASOS fuera + tabla 2x2 */}
-        <div className="flex flex-col gap-4 px-8 pb-12 md:px-0">
+        <div className="flex flex-col gap-4 px-6 pb-12 pt-6 md:px-0 md:pt-0">
           {/* Título "PASOS" fuera de la tabla */}
           <h3 className="text-center font-sans text-xs uppercase tracking-[0.3em] text-white">
             Pasos
           </h3>
 
           {/* Tabla 2x2 — líneas internas continuas */}
-          <div className="grid grid-cols-2 divide-x divide-y-0 divide-white/20 border-y border-l border-white/20">
+          <div className="grid grid-cols-1 divide-y divide-white/20 border border-white/20 sm:grid-cols-2 sm:divide-x sm:divide-y-0 md:border-y md:border-l md:border-r-0">
             {STEPS.map((step, index) => {
               const isTopRow = index < 2;
               return (
                 <div
                   key={step.number}
-                  className={`flex flex-col gap-3 p-6 md:p-8 ${isTopRow ? "border-b border-white/20" : ""}`}
+                  className={`flex flex-col gap-2 p-4 md:gap-3 md:p-8 ${isTopRow ? "sm:border-b sm:border-white/20" : ""}`}
                 >
                   <h4 className="font-sans text-xs font-semibold uppercase leading-tight tracking-[0.2em] text-white">
                     {step.number} —

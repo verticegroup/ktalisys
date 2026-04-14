@@ -9,7 +9,7 @@ interface ButtonProps extends ComponentProps<"a"> {
 const variantStyles: Record<ButtonVariant, string> = {
   primary: "bg-white text-black hover:bg-neutral-200",
   outline: "border border-white/30 text-white hover:bg-white/10",
-  red: "bg-[#E84D2E] text-white hover:bg-[#d4432a]",
+  red: "bg-[#E54529] text-white hover:bg-[#c43d22]",
   blue: "bg-[#3B8BD0] text-white hover:bg-[#3580c0]",
 };
 

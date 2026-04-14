@@ -49,17 +49,17 @@ const ITEMS = [
 
 export function ProjectsWhatWeShowSection() {
   return (
-    <section className="bg-black px-8 pt-20 pb-6 md:px-16 lg:px-24">
+    <section className="bg-black px-6 pt-10 pb-6 md:pt-20 md:px-16 lg:px-24">
       <div className="mx-auto max-w-7xl">
         {/* Título */}
-        <h2 className="text-center font-black uppercase leading-[1] tracking-tight text-[#E84D2E] text-3xl md:text-5xl lg:text-6xl">
+        <h2 className="text-center font-black uppercase leading-[1] tracking-tight text-[#E54529] text-3xl md:text-5xl lg:text-6xl">
           Qué mostramos en cada proyecto
         </h2>
 
         {/* 4 columnas con ícono + texto */}
-        <div className="mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4 md:gap-2">
+        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-2 gap-4 md:mt-14 md:grid-cols-4 md:gap-2">
           {ITEMS.map(({ Icon, label }, i) => (
-            <div key={i} className="flex flex-col items-center gap-6 text-center">
+            <div key={i} className="flex flex-col items-center gap-3 text-center md:gap-6">
               <div className="h-20 w-20 text-white md:h-24 md:w-24">
                 <Icon />
               </div>
@@ -71,7 +71,7 @@ export function ProjectsWhatWeShowSection() {
         </div>
 
         {/* Frase inferior */}
-        <p className="mt-14 text-center font-sans text-xs uppercase leading-relaxed tracking-[0.3em] text-white md:text-sm">
+        <p className="mt-8 text-center font-sans text-xs uppercase leading-relaxed tracking-[0.3em] text-white md:mt-14 md:text-sm">
           No mostramos métricas vacías. Mostramos decisiones bien tomadas.
         </p>
       </div>

@@ -14,14 +14,14 @@ function BurstShape({
 
 export function FocusWhatWeSeekSection() {
   return (
-    <section className="bg-black px-8 py-20 md:px-16 lg:px-24">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-10 lg:flex-row lg:items-center lg:justify-center lg:gap-16">
+    <section className="bg-black px-6 py-10 md:px-16 md:py-20 lg:px-24">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-6 lg:flex-row lg:items-center lg:justify-center lg:gap-16">
         {/* Izquierda: título con la figura en la primera línea */}
         <h2 className="relative font-sans text-lg font-semibold uppercase leading-relaxed tracking-[0.3em] text-white md:text-xl">
           <span className="relative inline-block">
             Qué buscamos
             <BurstShape
-              className="absolute left-full z-10 h-8 w-18 shrink-0 text-[#E84D2E] md:h-10 md:w-18 lg:h-12 lg:w-19"
+              className="absolute left-full z-10 h-8 w-18 shrink-0 text-[#E54529] md:h-10 md:w-18 lg:h-12 lg:w-19"
               style={{ top: "50%", transform: "translateY(-50%)", marginLeft: "0.5rem" }}
             />
           </span>

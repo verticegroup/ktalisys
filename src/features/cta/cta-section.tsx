@@ -1,15 +1,15 @@
 export function CtaSection() {
   return (
-    <section className="flex justify-center bg-white px-8 py-20 md:px-16 lg:px-24">
-      <div className="flex w-full max-w-3xl flex-col items-center gap-8 bg-black px-8 py-20 text-center md:px-16">
+    <section className="flex justify-center bg-white px-6 py-10 md:py-20 md:px-16 lg:px-24">
+      <div className="flex w-full max-w-3xl flex-col items-center gap-5 bg-black px-6 py-10 text-center md:gap-8 md:py-20 md:px-16">
         {/* Texto naranja */}
-        <p className="whitespace-nowrap font-sans text-sm font-semibold uppercase leading-relaxed tracking-[0.3em] text-[#E84D2E] md:text-base">
+        <p className="font-sans text-sm font-semibold uppercase leading-relaxed tracking-[0.3em] text-[#E54529] md:whitespace-nowrap md:text-base">
           Si tienes talento, este es<br />
           el siguiente paso
         </p>
 
         {/* Texto blanco */}
-        <p className="whitespace-nowrap font-sans text-lg leading-snug text-white md:text-xl lg:text-2xl">
+        <p className="font-sans text-base leading-snug text-white md:whitespace-nowrap md:text-xl lg:text-2xl">
           Si tu proyecto está listo para dejar de improvisar<br />
           y empezar a construir con visión, conversemos.
         </p>

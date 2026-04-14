@@ -27,12 +27,12 @@ function KtalisysLogo() {
 
 export function Footer() {
   return (
-    <footer className="bg-black px-8 pt-16 pb-4 text-white md:px-16 lg:px-24">
+    <footer className="bg-black px-6 pt-10 pb-4 text-white md:px-16 md:pt-16 lg:px-24">
       <div className="mx-auto max-w-7xl">
         {/* Fila superior: 3 columnas */}
-        <div className="grid grid-cols-1 items-stretch gap-10 border-b border-white/20 lg:grid-cols-3 lg:gap-0">
+        <div className="grid grid-cols-1 items-stretch gap-6 border-b border-white/20 pb-8 md:gap-10 md:pb-0 lg:grid-cols-3 lg:gap-0">
           {/* Columna 1: Logo + descripción */}
-          <div className="flex flex-col items-center gap-6 text-center lg:border-r lg:border-white/20 lg:pr-10 lg:pb-12">
+          <div className="flex flex-col items-center gap-4 text-center lg:gap-6 lg:border-r lg:border-white/20 lg:pr-10 lg:pb-12">
             <KtalisysLogo />
             <p className="font-sans text-sm font-semibold text-white md:text-base">
               Music Development & Strategy Company
@@ -46,11 +46,11 @@ export function Footer() {
           </div>
 
           {/* Columna 2: Menú */}
-          <div className="flex flex-col gap-4 lg:border-r lg:border-white/20 lg:px-10 lg:pb-12">
+          <div className="flex flex-col gap-3 lg:gap-4 lg:border-r lg:border-white/20 lg:px-10 lg:pb-12">
             <h4 className="text-center font-sans text-xs uppercase tracking-[0.3em] text-white">
               Menú
             </h4>
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-col gap-2 lg:gap-3">
               {MENU_LINKS.map((link) => (
                 <li key={link.href}>
                   <a
@@ -65,7 +65,7 @@ export function Footer() {
           </div>
 
           {/* Columna 3: CTA */}
-          <div className="flex flex-col justify-center gap-4 lg:pb-12 lg:pl-10">
+          <div className="flex flex-col justify-center gap-3 lg:gap-4 lg:pb-12 lg:pl-10">
             <h4 className="font-sans text-sm font-semibold uppercase leading-snug tracking-widest text-white">
               ¿Tienes un proyecto musical?
             </h4>
@@ -90,7 +90,7 @@ export function Footer() {
         <div className="mb-4" />
 
         {/* Fila media: contacto + tagline + legales */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:items-center">
+        <div className="grid grid-cols-1 gap-5 md:gap-8 md:grid-cols-3 md:items-center">
           {/* Contacto */}
           <div className="flex flex-col gap-2 md:flex-row md:items-start md:gap-8">
             <h5 className="shrink-0 font-sans text-xs uppercase tracking-[0.3em] text-white/70">
@@ -104,7 +104,7 @@ export function Footer() {
 
           {/* Tagline con estrella */}
           <div className="flex items-center justify-center gap-4">
-            <StarIcon className="h-10 w-10 text-[#E84D2E]" />
+            <StarIcon className="h-10 w-10 text-[#E54529]" />
             <p className="whitespace-pre-line font-sans text-xs font-semibold uppercase leading-tight tracking-[0.2em] text-white md:text-sm">
               {"El talento\nno se fabrica.\nSe cataliza."}
             </p>

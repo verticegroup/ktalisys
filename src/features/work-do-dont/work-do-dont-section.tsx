@@ -36,8 +36,8 @@ function Column({ title, items }: { title: string; items: readonly string[] }) {
 
 export function WorkDoDontSection() {
   return (
-    <section className="bg-black px-8 py-16 md:px-16 lg:px-24">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-stretch gap-18 md:grid-cols-3 md:gap-18">
+    <section className="bg-black px-6 py-10 md:py-16 md:px-16 lg:px-24">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-stretch gap-8 md:grid-cols-3 md:gap-18">
         <Column title="Sí hacemos" items={SI_HACEMOS} />
         <Column title="No hacemos" items={NO_HACEMOS} />
 

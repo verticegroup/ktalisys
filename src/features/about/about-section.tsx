@@ -36,7 +36,7 @@ function ScallopedBlock({ children }: { children: React.ReactNode }) {
 
 export function AboutSection() {
   return (
-    <section className="mt-2 flex justify-center px-12 md:px-16 lg:px-24">
+    <section className="mt-2 flex justify-center px-6 md:px-16 lg:px-24">
       <div className="relative w-full rounded-lg">
         <Image
           src="/as.png"
@@ -46,28 +46,30 @@ export function AboutSection() {
         />
         <div className="absolute inset-0 rounded-lg bg-black/60" />
 
-        <div className="relative z-10 flex min-h-[70vh] items-center px-10 py-16 md:px-16">
-          <div className="flex w-full items-start justify-center gap-28">
+        <div className="relative z-10 flex min-h-[60vh] items-center px-5 py-8 md:min-h-[70vh] md:px-16 md:py-16">
+          <div className="flex w-full flex-col items-start justify-center gap-6 lg:flex-row lg:gap-28">
             {/* Columna izquierda */}
             <div className="flex flex-col">
               {/* Título + bloque azul encima */}
               <div className="relative inline-block">
-                <h2 className="whitespace-nowrap text-5xl leading-[0.95] font-black italic uppercase tracking-tight text-white md:text-7xl lg:text-8xl xl:text-9xl">
+                <h2 className="text-4xl leading-[0.95] font-black italic uppercase tracking-tight text-white md:text-7xl lg:whitespace-nowrap lg:text-8xl xl:text-9xl">
                   ¿Qué es Ktalisys?
                 </h2>
 
-                <div style={{ position: "absolute", top: "98%", left: "70%", transform: "translateY(-40%)", zIndex: 30 }}>
-                  <ScallopedBlock>
-                    <p className="whitespace-nowrap font-sans text-xs uppercase leading-tight tracking-wider text-[#E84D2E] md:text-sm">
-                      Un catalizador<br />para el talento<br />musical.
-                    </p>
-                  </ScallopedBlock>
+                <div className="mt-4 lg:mt-0" style={{ zIndex: 30 }}>
+                  <div className="lg:absolute" style={{ top: "98%", left: "70%", transform: "translateY(-40%)" }}>
+                    <ScallopedBlock>
+                      <p className="font-sans text-xs uppercase leading-tight tracking-wider text-[#E54529] md:whitespace-nowrap md:text-sm">
+                        Un catalizador<br />para el talento<br />musical.
+                      </p>
+                    </ScallopedBlock>
+                  </div>
                 </div>
               </div>
 
               {/* Texto rojo debajo */}
-              <div className="mt-3 pl-10">
-                <p className="whitespace-pre-line font-sans text-xs leading-tight uppercase tracking-wider text-[#E84D2E] md:text-xs">
+              <div className="mt-3 lg:pl-10">
+                <p className="whitespace-pre-line font-sans text-xs leading-tight uppercase tracking-wider text-[#E54529] md:text-xs">
                   {"No somos un sello. Somos\nel punto donde el talento\nencuentra dirección."}
                 </p>
               </div>

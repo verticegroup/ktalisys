@@ -2,17 +2,17 @@ import Image from "next/image";
 
 export function WorkIntroSection() {
   return (
-    <section className="bg-black px-8 pt-36 pb-16 md:px-16 lg:px-24">
+    <section className="bg-black px-6 pt-20 pb-10 md:pt-36 md:pb-16 md:px-16 lg:px-24">
       <div className="mx-auto max-w-7xl">
         {/* Título grande centrado */}
-        <h1 className="text-center font-black uppercase leading-[1] tracking-tight text-[#E84D2E] text-4xl md:text-5xl lg:text-6xl">
+        <h1 className="text-center font-black uppercase leading-[1] tracking-tight text-[#E54529] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
           El talento necesita dirección para avanzar
         </h1>
 
         {/* 3 columnas: párrafo / imagen / frase */}
-        <div className="mt-12 grid grid-cols-1 items-center gap-4 md:grid-cols-[1fr_auto_1fr] md:gap-4">
+        <div className="mt-6 grid grid-cols-1 items-center gap-5 md:mt-12 md:grid-cols-[1fr_auto_1fr] md:gap-4">
           {/* Párrafo izquierda */}
-          <p className="justify-self-end whitespace-nowrap font-sans text-sm leading-snug text-white md:text-base">
+          <p className="font-sans text-sm leading-snug text-white md:justify-self-end md:whitespace-nowrap md:text-base">
             En Ktalisys trabajamos con método,<br />
             criterio y visión de mercado para<br />
             acelerar proyectos musicales con<br />
@@ -31,7 +31,7 @@ export function WorkIntroSection() {
               </defs>
             </svg>
             <div
-              className="relative h-28 w-72 md:h-32 md:w-80"
+              className="relative h-24 w-full max-w-72 md:h-32 md:w-80"
               style={{ clipPath: "url(#scallopedImage)" }}
             >
               <Image
@@ -45,7 +45,7 @@ export function WorkIntroSection() {
           </div>
 
           {/* Frase derecha */}
-          <p className="justify-self-start whitespace-pre-line font-sans text-sm font-semibold uppercase leading-tight tracking-widest text-white md:text-base">
+          <p className="whitespace-pre-line font-sans text-sm font-semibold uppercase leading-tight tracking-widest text-white md:justify-self-start md:text-base">
             {"El talento no\nse improvisa.\nSe estructura."}
           </p>
         </div>

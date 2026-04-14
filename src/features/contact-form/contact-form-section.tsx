@@ -1,19 +1,19 @@
 export function ContactFormSection() {
   return (
-    <section className="relative overflow-hidden bg-black px-8 pt-32 pb-16 md:px-16 lg:px-24">
+    <section className="relative overflow-hidden bg-black px-6 pt-16 pb-10 md:px-16 md:pt-32 md:pb-16 lg:px-24">
       {/* Título gigante de fondo */}
-      <h1 className="relative z-0 whitespace-nowrap text-center font-black uppercase leading-[0.95] tracking-tight text-[#E84D2E] text-[14vw]">
+      <h1 className="relative z-0 text-center font-black uppercase leading-[0.95] tracking-tight text-[#E54529] text-[14vw] md:whitespace-nowrap">
         Hablemos de tu proyecto
       </h1>
 
       {/* Dos columnas */}
-      <div className="relative z-10 mx-auto mt-10 grid max-w-6xl grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16">
+      <div className="relative z-10 mx-auto mt-6 grid max-w-6xl grid-cols-1 items-start gap-8 md:mt-10 md:gap-10 lg:grid-cols-2 lg:gap-16">
         {/* Columna izquierda: texto */}
         <div className="flex flex-col gap-4 text-white">
           <p className="whitespace-pre-line font-sans text-sm leading-snug md:text-base">
             {"Si tienes una propuesta clara o una inquietud\nespecífica, este es el espacio para iniciar la\nconversación."}
           </p>
-          <p className="font-black uppercase leading-tight tracking-tight text-white text-8xl md:text-6xl">
+          <p className="font-black uppercase leading-tight tracking-tight text-white text-4xl md:text-6xl">
             La claridad es el primer paso.
           </p>
           <p className="font-sans text-xs font-semibold uppercase tracking-[0.25em] md:text-sm">
@@ -29,17 +29,17 @@ export function ContactFormSection() {
           </p>
 
           <div className="mt-4 flex flex-col gap-1">
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.25em] text-[#E84D2E] md:text-sm">
+            <p className="font-sans text-xs font-semibold uppercase tracking-[0.25em] text-[#E54529] md:text-sm">
               Información de contacto
             </p>
-            <a href="mailto:contacto@ktalisys.com" className="inline-flex items-center gap-2 font-sans text-sm text-[#E84D2E] md:text-base">
+            <a href="mailto:contacto@ktalisys.com" className="inline-flex items-center gap-2 font-sans text-sm text-[#E54529] md:text-base">
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="5" width="18" height="14" rx="2" />
                 <path d="M3 7l9 6 9-6" />
               </svg>
               contacto@ktalisys.com
             </a>
-            <p className="inline-flex items-center gap-2 font-sans text-sm text-[#E84D2E] md:text-base">
+            <p className="inline-flex items-center gap-2 font-sans text-sm text-[#E54529] md:text-base">
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 22s-7-7-7-12a7 7 0 1114 0c0 5-7 12-7 12z" />
                 <circle cx="12" cy="10" r="2.5" />
@@ -49,9 +49,9 @@ export function ContactFormSection() {
           </div>
 
           {/* Frase blanca en negrita con burst */}
-          <p className="mt-6 whitespace-pre-line font-black uppercase leading-tight tracking-tight text-white text-base md:text-6xl">
+          <p className="mt-6 whitespace-pre-line font-black uppercase leading-tight tracking-tight text-white text-2xl md:text-6xl">
             {"No todas las conversaciones\nson el inicio de un proyecto.\nPero toda buena conversación\nempieza con claridad."}
-            <svg className="inline-block h-5 w-5 align-middle text-[#E84D2E]" viewBox="0 0 24 24" fill="currentColor">
+            <svg className="inline-block h-5 w-5 align-middle text-[#E54529]" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 0l2.5 7.5L22 5.5l-5 5L24 12l-7.5 2.5L22 18.5l-7.5-2L12 24l-2.5-7.5L2 18.5l5-4L0 12l7.5-2.5L2 5.5l7.5 2L12 0z" />
             </svg>
           </p>
@@ -69,7 +69,7 @@ export function ContactFormSection() {
         </div>
 
         {/* Columna derecha: formulario (sobresale sobre el título) */}
-        <div className="flex flex-col gap-5 bg-white p-8 md:p-25 lg:-mt-24 xl:-mt-28">
+        <div className="flex flex-col gap-4 bg-white p-6 md:gap-5 md:p-12 lg:-mt-24 xl:-mt-28">
           <input
             type="text"
             placeholder="Nombre completo"

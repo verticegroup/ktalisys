@@ -42,13 +42,13 @@ function ServiceRow({
 
 export function ServicesSection() {
   return (
-    <section className="mt-6 bg-white px-12 md:px-16 lg:px-24">
-      <div className="w-full bg-white py-12">
-        <h2 className="whitespace-nowrap text-center text-[7vw] leading-[0.95] font-black uppercase tracking-tight text-[#E84D2E]">
+    <section className="mt-6 bg-white px-6 md:px-16 lg:px-24">
+      <div className="w-full bg-white py-8 md:py-12">
+        <h2 className="text-center text-[7vw] leading-[0.95] font-black uppercase tracking-tight text-[#E54529] lg:whitespace-nowrap">
           Del talento a la aceptación real
         </h2>
 
-        <div className="mx-auto mt-10 flex max-w-3xl flex-col">
+        <div className="mx-auto mt-6 flex max-w-3xl flex-col md:mt-10">
           {SERVICES.map((service) => (
             <ServiceRow
               key={service.title}

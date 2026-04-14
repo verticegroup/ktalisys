@@ -22,29 +22,27 @@ const profileItems = [
 
 export function ProfileSection() {
   return (
-    <section className="relative bg-[#5BA4D9] px-8 py-16 md:px-16 lg:px-32">
-      <div className="mx-auto flex max-w-4xl flex-col gap-10 lg:flex-row lg:items-start lg:gap-16">
+    <section className="relative bg-[#5BA4D9] px-6 py-10 md:py-16 md:px-16 lg:px-32">
+      <div className="mx-auto flex max-w-4xl flex-col gap-6 lg:flex-row lg:items-start lg:gap-16">
         {/* Columna izquierda: título + foto */}
-        <div className="flex flex-col gap-6 lg:w-1/2">
+        <div className="flex flex-col gap-5 lg:w-1/2 lg:gap-6">
           {/* Título con estrella y texto descriptivo posicionado encima */}
-          <div className="relative inline-block">
-            <h2 className="whitespace-pre-line text-4xl leading-[0.95] font-black uppercase tracking-tight text-black md:text-5xl lg:text-6xl">
+          <div className="relative lg:inline-block">
+            <h2 className="whitespace-pre-line text-3xl leading-[0.95] font-black uppercase tracking-tight text-black md:text-5xl lg:text-6xl">
               {"No trabajamos con todos.\ny eso es intencional."}
             </h2>
             {/* Estrella/sol rojo - sobre el final de "intencional" */}
             <StarShape
-              className="absolute bottom-0 z-30 h-14 w-14 text-[#E84D2E] md:h-16 md:w-16"
-              style={{ left: "calc(43% + 5.5rem)" }}
+              className="hidden lg:absolute lg:bottom-0 lg:z-30 lg:block lg:h-14 lg:w-14 lg:text-[#E54529] lg:[left:calc(43%+5.5rem)] xl:h-16 xl:w-16"
             />
             {/* Texto descriptivo al lado de la estrella */}
             <div
-              className="absolute z-30"
-              style={{ left: "calc(44% + 10rem)", bottom: "-0.5rem" }}
+              className="relative z-30 mt-6 lg:absolute lg:mt-0 lg:[bottom:-0.5rem] lg:[left:calc(44%+10rem)]"
             >
-              <p className="relative whitespace-nowrap font-sans text-sm leading-tight text-white md:text-base">
+              <p className="relative font-sans text-sm leading-tight text-white lg:whitespace-nowrap md:text-base">
                 {/* Mancha naranja en la esquina superior derecha del texto */}
                 <span
-                  className="absolute -top-10 -right-24 z-0 h-8 w-24 rotate-12 bg-[#E84D2E] md:-top-12 md:h-10 md:w-28"
+                  className="hidden lg:absolute lg:-top-10 lg:-right-24 lg:z-0 lg:block lg:h-8 lg:w-24 lg:rotate-12 lg:bg-[#E54529] xl:-top-12 xl:h-10 xl:w-28"
                   style={{
                     clipPath: `polygon(
                       12% 0%, 88% 0%,
@@ -63,10 +61,9 @@ export function ProfileSection() {
 
             {/* Perfil ideal + lista posicionado debajo del texto descriptivo */}
             <div
-              className="absolute z-30 flex flex-col gap-3"
-              style={{ left: "calc(44% + 10rem)", top: "calc(100% + 1.5rem)" }}
+              className="relative z-30 mt-5 flex flex-col gap-3 lg:absolute lg:mt-0 lg:[left:calc(44%+10rem)] lg:[top:calc(100%+1.5rem)]"
             >
-              <div className="relative -ml-14 inline-flex self-start px-4 py-1.5">
+              <div className="relative inline-flex self-start px-4 py-1.5 lg:-ml-14">
                 <svg
                   className="absolute inset-0 h-full w-full"
                   viewBox="0 0 120 40"
@@ -85,22 +82,22 @@ export function ProfileSection() {
                   Perfil ideal
                 </span>
               </div>
-              <ul className="ml-12 flex flex-col gap-7 pb-4">
+              <ul className="flex flex-col gap-2 pb-2 lg:ml-12 lg:gap-7 lg:pb-4">
                 {profileItems.map((item) => (
-                  <li key={item} className="whitespace-nowrap font-sans text-sm text-white md:text-base">
+                  <li key={item} className="font-sans text-sm text-white lg:whitespace-nowrap md:text-base">
                     {item}
                   </li>
                 ))}
               </ul>
-              <p className="ml-12 mt-4 max-w-md font-sans text-sm font-semibold uppercase leading-tight tracking-wide text-black md:text-base">
+              <p className="mt-2 max-w-md font-sans text-sm font-semibold uppercase leading-tight tracking-wide text-black lg:ml-12 lg:mt-4 md:text-base">
                 Si buscas solo exposición,<br />
                 este no es el lugar.<br />
                 Si buscas dirección, sí.
               </p>
               {/* Logo Ktalisys - vertical, orientado hacia arriba */}
               <div
-                className="absolute flex items-center gap-2 text-black"
-                style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", left: "calc(100% + 8rem)", bottom: "0" }}
+                className="hidden text-black lg:absolute lg:flex lg:items-center lg:gap-2 lg:[bottom:0] lg:[left:calc(100%+8rem)]"
+                style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
               >
                 <span className="text-3xl font-bold italic tracking-tight md:text-4xl">Ktalisys</span>
                 <svg
@@ -126,10 +123,10 @@ export function ProfileSection() {
               />
             </div>
             {/* Estrella sobresaliendo a la mitad en la esquina inferior derecha */}
-            <StarShape className="absolute -right-8 bottom-4 z-30 h-16 w-16 text-[#E84D2E] md:-right-10 md:h-20 md:w-20" />
+            <StarShape className="absolute -right-8 bottom-4 z-30 h-16 w-16 text-[#E54529] md:-right-10 md:h-20 md:w-20" />
             {/* Forma vertical escalonada sobresaliendo en la esquina superior izquierda */}
             <span
-              className="absolute -left-5 top-8 z-30 h-28 w-10 bg-[#E84D2E] md:-left-6 md:h-32 md:w-12"
+              className="absolute -left-5 top-8 z-30 h-28 w-10 bg-[#E54529] md:-left-6 md:h-32 md:w-12"
               style={{
                 clipPath: `polygon(
                   0% 12%, 0% 88%,

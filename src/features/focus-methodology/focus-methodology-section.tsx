@@ -76,7 +76,7 @@ function PhaseCell({ phase }: { phase: (typeof PHASES)[number] }) {
 
 export function FocusMethodologySection() {
   return (
-    <section className="bg-black px-8 py-16 md:px-16 lg:px-24">
+    <section className="bg-black px-6 py-10 md:py-16 md:px-16 lg:px-24">
       <div className="mx-auto max-w-5xl">
         {/* Título arriba de la tabla */}
         <h3 className="mb-6 text-center font-sans text-xs uppercase tracking-[0.3em] text-[#5BA4D9] md:text-sm">
@@ -84,13 +84,13 @@ export function FocusMethodologySection() {
         </h3>
 
         {/* Tabla 2x2 con bordes internos y externos */}
-        <div className="grid grid-cols-2 divide-x divide-y-0 divide-white/20 border border-white/20">
+        <div className="grid grid-cols-1 divide-y divide-white/20 border border-white/20 md:grid-cols-2 md:divide-x md:divide-y-0">
           {PHASES.map((phase, index) => {
             const isTopRow = index < 2;
             return (
               <div
                 key={phase.number}
-                className={isTopRow ? "border-b border-white/20" : ""}
+                className={isTopRow ? "md:border-b md:border-white/20" : ""}
               >
                 <PhaseCell phase={phase} />
               </div>

@@ -26,8 +26,8 @@ function ScallopedBlock({ children }: { children: React.ReactNode }) {
 
 export function ProjectsEachWaySection() {
   return (
-    <section className="bg-black px-8 py-16 md:px-16 lg:px-24">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-10 lg:flex-row lg:items-center lg:gap-12">
+    <section className="bg-black px-6 py-10 md:py-16 md:px-16 lg:px-24">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-6 lg:flex-row lg:items-center lg:gap-12">
         {/* Izquierda: texto */}
         <div className="flex max-w-sm flex-col gap-4">
           <p className="font-sans text-base leading-snug text-white md:text-lg">
@@ -40,7 +40,7 @@ export function ProjectsEachWaySection() {
 
         {/* Centro: bloque ondulado azul */}
         <ScallopedBlock>
-          <p className="whitespace-pre-line text-center font-sans text-xs font-bold uppercase leading-tight tracking-[0.2em] text-[#E84D2E] md:text-sm">
+          <p className="whitespace-pre-line text-center font-sans text-xs font-bold uppercase leading-tight tracking-[0.2em] text-[#E54529] md:text-sm">
             {"Cada proyecto\ntiene su propio\ncamino."}
           </p>
         </ScallopedBlock>

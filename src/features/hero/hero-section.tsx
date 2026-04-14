@@ -23,7 +23,7 @@ function HeroHeadingRight() {
 
 function HeroDescription() {
   return (
-    <div className="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-center md:gap-16">
+    <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-center md:gap-16">
       <p className="max-w-lg whitespace-pre-line font-gilroy text-base leading-relaxed text-white md:mr-25 md:text-lg">
         {"Guiamos artistas con visión estratégica, marketing\ny producción musical para convertir talento en\naceptación real y oportunidades sostenibles."}
       </p>
@@ -31,7 +31,7 @@ function HeroDescription() {
       <div className="flex items-stretch gap-3">
         <a
           href="#como-trabajamos"
-          className="flex items-center bg-[#E84D2E] px-4 py-1 font-black text-2xl uppercase leading-tight md:text-3xl text-white transition-colors hover:bg-[#d4432a]"
+          className="flex items-center bg-[#E54529] px-4 py-1 font-black text-2xl uppercase leading-tight md:text-3xl text-white transition-colors hover:bg-[#c43d22]"
         >
           <span className="whitespace-pre-line">{"Cómo\ntrabajamos"}</span>
         </a>
@@ -43,7 +43,7 @@ function HeroDescription() {
         </a>
       </div>
 
-      <p className="-ml-10 whitespace-pre-line text-left font-gilroy text-sm leading-relaxed font-semibold uppercase tracking-widest text-white md:text-base">
+      <p className="whitespace-pre-line text-left font-gilroy text-sm leading-relaxed font-semibold uppercase tracking-widest text-white md:-ml-10 md:text-base">
         {"El talento\nno se fabrica.\nSe cataliza."}
       </p>
     </div>
@@ -52,13 +52,13 @@ function HeroDescription() {
 
 export function HeroSection() {
   return (
-    <section className="relative flex flex-col justify-center gap-10 bg-black px-12 pt-44 pb-4 md:px-16 lg:px-24">
-      <div className="flex items-center justify-center gap-5">
+    <section className="relative flex flex-col justify-center gap-6 overflow-hidden bg-black px-6 pt-24 pb-4 md:gap-10 md:pt-44 md:px-16 lg:px-24">
+      <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-5">
         <HeroHeadingLeft />
 
-        <div className="relative hidden w-full max-w-lg self-center md:block xl:max-w-xl 2xl:max-w-2xl">
+        <div className="relative w-full max-w-xs self-center md:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
           <div
-            className="relative h-[120px] md:h-[140px] lg:h-[160px] xl:h-[190px] 2xl:h-[220px]"
+            className="relative h-[90px] md:h-[140px] lg:h-[160px] xl:h-[190px] 2xl:h-[220px]"
             style={{
               clipPath: `polygon(
                 12% 0%, 88% 0%,

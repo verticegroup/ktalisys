@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export function FocusPillarsSection() {
   return (
-    <section className="bg-black px-8 py-16 md:px-16 lg:px-24">
-      <div className="mx-auto grid max-w-5xl grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16">
+    <section className="bg-black px-6 py-10 md:py-16 md:px-16 lg:px-24">
+      <div className="mx-auto grid max-w-5xl grid-cols-1 items-start gap-6 lg:grid-cols-2 lg:gap-16">
         {/* Columna izquierda: mosaico de imágenes con título */}
         <div className="grid grid-cols-[2fr_1fr] gap-3">
           {/* Sección izquierda (2/3): título arriba + 3 imágenes abajo en fila */}
           <div className="flex flex-col gap-3">
-            <h2 className="whitespace-pre-line font-black uppercase leading-[1] tracking-tight text-[#5BA4D9] text-4xl md:text-5xl lg:text-7xl">
+            <h2 className="whitespace-pre-line font-black uppercase leading-[1] tracking-tight text-[#5BA4D9] text-3xl md:text-5xl lg:text-7xl">
               {"Los pilares que\nsostienen cada\nproyecto"}
             </h2>
             <div className="grid grid-cols-3 gap-3">

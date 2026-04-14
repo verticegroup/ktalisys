@@ -25,12 +25,12 @@ const STAIRS_CLIP = `polygon(
 
 export function VisionSection() {
   return (
-    <section className="relative bg-black px-8 pt-20 pb-0 md:px-16 lg:px-24">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 lg:grid-cols-3 lg:items-start">
+    <section className="relative overflow-hidden bg-black px-6 pt-12 pb-0 md:pt-20 md:px-16 lg:px-24">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 lg:grid-cols-3 lg:items-start lg:gap-12">
         {/* Columna izquierda: forma naranja + frase */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4 md:gap-8">
           <span
-            className="block h-10 w-28 bg-[#E84D2E] md:h-12 md:w-32"
+            className="block h-10 w-28 bg-[#E54529] md:h-12 md:w-32"
             style={{ clipPath: STAIRS_CLIP }}
           />
           <p className="ml-auto whitespace-pre-line font-sans text-sm font-semibold uppercase leading-tight tracking-widest text-white md:text-base">
@@ -40,17 +40,17 @@ export function VisionSection() {
 
         {/* Columna centro: estrella alineada al inicio del segundo párrafo */}
         <div className="flex justify-center lg:mt-32">
-          <StarShape className="h-28 w-28 text-white md:h-36 md:w-36" />
+          <StarShape className="h-20 w-20 text-white md:h-36 md:w-36" />
         </div>
 
         {/* Columna derecha: textos */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4 md:gap-6">
           <p className="font-sans text-base leading-snug text-white md:text-lg">
             Ser el catalizador que transforme el talento musical
             en proyectos exitosos, relevantes y competitivos a
             nivel global.
           </p>
-          <p className="whitespace-nowrap font-sans text-base leading-snug text-white md:text-lg">
+          <p className="font-sans text-base leading-snug text-white lg:whitespace-nowrap md:text-lg">
             Creemos en el talento auténtico y en la estrategia<br />
             correcta para que llegue más lejos, más rápido.
           </p>
@@ -58,11 +58,11 @@ export function VisionSection() {
       </div>
 
       {/* Título grande NUESTRA VISIÓN abajo */}
-      <div className="mx-auto mt-16 max-w-7xl text-center">
-        <h3 className="relative -mb-[10vw] inline-block whitespace-nowrap font-black uppercase leading-[0.75] tracking-tight text-[#E84D2E] text-[14vw]">
+      <div className="mx-auto mt-8 max-w-7xl text-center md:mt-16">
+        <h3 className="relative -mb-[10vw] inline-block font-black uppercase leading-[0.75] tracking-tight text-[#E54529] text-[14vw] lg:whitespace-nowrap">
           Nuestra visión
           <span
-            className="absolute z-20 block h-14 w-40 bg-[#5BA4D9] md:h-16 md:w-48"
+            className="hidden lg:absolute lg:z-20 lg:block lg:h-14 lg:w-40 lg:bg-[#5BA4D9] xl:h-16 xl:w-48"
             style={{
               clipPath: STAIRS_CLIP,
               right: "-25%",

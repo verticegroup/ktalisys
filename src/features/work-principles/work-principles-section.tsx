@@ -76,15 +76,15 @@ function Principle({
 
 export function WorkPrinciplesSection() {
   return (
-    <section className="relative overflow-hidden bg-black px-8 py-24 md:px-16 lg:px-24">
+    <section className="relative overflow-hidden bg-black px-6 py-10 md:px-16 md:py-24 lg:px-24">
       <div className="relative mx-auto max-w-7xl">
         {/* Título gigante centrado */}
-        <h2 className="relative z-10 text-center font-black uppercase leading-[0.95] tracking-tight text-[#E84D2E] text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+        <h2 className="relative z-10 text-center font-black uppercase leading-[0.95] tracking-tight text-[#E54529] text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
           <span className="relative inline-block">
             Principios que
             {/* Estrella blanca superpuesta entre "Principios" y "que" */}
             <StarShape
-              className="absolute z-30 h-14 w-14 text-white md:h-16 md:w-16"
+              className="absolute z-30 h-8 w-8 text-white md:h-16 md:w-16"
               style={{ left: "78%", top: "15%", transform: "translate(-50%, -50%)" }}
             />
           </span>
@@ -92,15 +92,15 @@ export function WorkPrinciplesSection() {
           <span className="relative inline-block">
             {/* Forma naranja ondulada debajo-izquierda de "Guían" */}
             <ScallopedPill
-              color="#E84D2E"
-              className="absolute -bottom-8 -left-6 z-30 h-6 w-24 md:-bottom-10 md:-left-10 md:h-7 md:w-28"
+              color="#E54529"
+              className="absolute -bottom-5 -left-2 z-30 h-4 w-14 md:-bottom-10 md:-left-10 md:h-7 md:w-28"
             />
             Guían cada proyecto
             {/* Forma blanca vertical ondulada a la derecha */}
             <ScallopedPill
               orientation="vertical"
               color="#ffffff"
-              className="absolute -top-10 z-30 h-6 w-20 md:h-7 md:w-24"
+              className="absolute -top-10 z-30 hidden h-6 w-20 md:block md:h-7 md:w-24"
               style={{ left: "calc(100% + 1rem)" }}
             />
           </span>
@@ -158,7 +158,7 @@ export function WorkPrinciplesSection() {
         </div>
 
         {/* Versión móvil: grid 2 columnas debajo del título */}
-        <div className="mt-12 grid grid-cols-1 gap-10 md:hidden">
+        <div className="mt-8 grid grid-cols-1 gap-5 md:hidden">
           <Principle
 
             title="Estrategia antes que velocidad"

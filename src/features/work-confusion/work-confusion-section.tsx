@@ -19,7 +19,7 @@ export function WorkConfusionSection() {
 
         {/* Texto en la mitad derecha, centrado vertical */}
         <div className="flex w-1/2 items-center">
-          <h2 className="whitespace-pre-line pl-8 font-black uppercase leading-[1] tracking-tight text-[#E84D2E] text-8xl md:text-8xl lg:text-8xl">
+          <h2 className="whitespace-pre-line pl-3 pr-2 font-black uppercase leading-[1] tracking-tight text-[#E54529] text-2xl sm:pl-4 sm:text-5xl md:pl-8 md:text-7xl lg:text-8xl">
             {"Para evitar\nconfusiones"}
           </h2>
         </div>
