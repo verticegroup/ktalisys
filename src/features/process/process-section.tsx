@@ -39,30 +39,50 @@ export function ProcessSection() {
 
         {/* Grid de pasos con línea divisora única */}
         <div className="flex-1">
-          <div className="grid grid-cols-1 gap-x-10 md:grid-cols-2 lg:grid-cols-4">
+          {/* Mobile: cada paso con su descripción agrupada */}
+          <div className="flex flex-col gap-6 md:hidden">
             {STEPS.map((step) => (
-              <h3
-                key={step.number}
-                className="font-sans text-sm font-semibold uppercase leading-tight tracking-[0.2em] text-white"
-              >
-                {step.number} —
-                <br />
-                {step.title}
-              </h3>
+              <div key={step.number} className="flex flex-col gap-2">
+                <h3 className="font-sans text-sm font-semibold uppercase leading-tight tracking-[0.2em] text-white">
+                  {step.number} —
+                  <br />
+                  {step.title}
+                </h3>
+                <div className="-mr-6 border-t border-white/30" />
+                <p className="font-sans text-sm leading-snug text-white">
+                  {step.description}
+                </p>
+              </div>
             ))}
           </div>
 
-          <div className="mt-4 border-t border-white/30" />
+          {/* md+: títulos arriba, línea única, descripciones abajo */}
+          <div className="hidden md:block">
+            <div className="grid grid-cols-2 items-end gap-x-10 lg:grid-cols-4">
+              {STEPS.map((step) => (
+                <h3
+                  key={step.number}
+                  className="font-sans text-sm font-semibold uppercase leading-tight tracking-[0.2em] text-white"
+                >
+                  {step.number} —
+                  <br />
+                  {step.title}
+                </h3>
+              ))}
+            </div>
 
-          <div className="mt-5 grid grid-cols-1 gap-x-10 gap-y-6 md:grid-cols-2 lg:grid-cols-4">
-            {STEPS.map((step) => (
-              <p
-                key={step.number}
-                className="font-sans text-sm leading-snug text-white"
-              >
-                {step.description}
-              </p>
-            ))}
+            <div className="mt-3 -mr-16 border-t border-white/30 lg:-mr-24" />
+
+            <div className="mt-3 grid grid-cols-2 gap-x-10 gap-y-6 lg:grid-cols-4">
+              {STEPS.map((step) => (
+                <p
+                  key={step.number}
+                  className="font-sans text-sm leading-snug text-white"
+                >
+                  {step.description}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -28,21 +28,23 @@ export function ProfileSection() {
         <div className="flex flex-col gap-5 lg:w-1/2 lg:gap-6">
           {/* Título con estrella y texto descriptivo posicionado encima */}
           <div className="relative lg:inline-block">
-            <h2 className="whitespace-pre-line text-3xl leading-[0.95] font-black uppercase tracking-tight text-black md:text-5xl lg:text-6xl">
-              {"No trabajamos con todos.\ny eso es intencional."}
-            </h2>
-            {/* Estrella/sol rojo - sobre el final de "intencional" */}
-            <StarShape
-              className="hidden lg:absolute lg:bottom-0 lg:z-30 lg:block lg:h-14 lg:w-14 lg:text-[#E54529] lg:[left:calc(43%+5.5rem)] xl:h-16 xl:w-16"
-            />
+            <div className="relative inline-block">
+              <h2 className="whitespace-pre-line text-3xl leading-[0.95] font-black uppercase tracking-tight text-black md:text-5xl lg:text-6xl">
+                {"No trabajamos con todos.\ny eso es intencional."}
+              </h2>
+              {/* Estrella/sol rojo - sobre el final de "intencional" */}
+              <StarShape
+                className="absolute bottom-0 left-[calc(43%+2.5rem)] right-auto z-30 block h-10 w-10 text-[#E54529] md:left-[calc(43%+4rem)] md:h-12 md:w-12 lg:left-[calc(43%+5.5rem)] lg:h-14 lg:w-14 xl:h-16 xl:w-16"
+              />
+            </div>
             {/* Texto descriptivo al lado de la estrella */}
             <div
               className="relative z-30 mt-6 lg:absolute lg:mt-0 lg:[bottom:-0.5rem] lg:[left:calc(44%+10rem)]"
             >
-              <p className="relative font-sans text-sm leading-tight text-white lg:whitespace-nowrap md:text-base">
+              <p className="relative font-sans text-sm leading-snug text-white md:text-base lg:whitespace-nowrap lg:leading-tight">
                 {/* Mancha naranja en la esquina superior derecha del texto */}
                 <span
-                  className="hidden lg:absolute lg:-top-10 lg:-right-24 lg:z-0 lg:block lg:h-8 lg:w-24 lg:rotate-12 lg:bg-[#E54529] xl:-top-12 xl:h-10 xl:w-28"
+                  className="absolute -right-4 -top-8 z-0 block h-6 w-20 rotate-12 bg-[#E54529] md:-right-12 md:-top-9 md:h-8 md:w-24 lg:-top-10 lg:-right-24 xl:-top-12 xl:h-10 xl:w-28"
                   style={{
                     clipPath: `polygon(
                       12% 0%, 88% 0%,
@@ -52,11 +54,34 @@ export function ProfileSection() {
                   }}
                 />
                 <span className="relative z-10">
-                  Ktalisys trabaja con artistas y proyectos que entienden<br />
-                  que el talento necesita estructura, visión y disciplina<br />
-                  para crecer.
+                  Ktalisys trabaja con artistas y proyectos que entienden<br className="hidden lg:inline" />
+                  {" "}que el talento necesita estructura, visión y disciplina<br className="hidden lg:inline" />
+                  {" "}para crecer.
                 </span>
               </p>
+            </div>
+
+            {/* Foto artista (solo mobile, va arriba de "Perfil ideal") */}
+            <div className="relative z-20 mt-6 ml-5 w-56 md:w-64 lg:hidden">
+              <div className="relative aspect-[3/4] overflow-hidden">
+                <Image
+                  src="/karol g.jpg"
+                  alt="Karol G"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <StarShape className="absolute -right-8 bottom-4 z-30 h-16 w-16 text-[#E54529] md:-right-10 md:h-20 md:w-20" />
+              <span
+                className="absolute -left-5 top-8 z-30 h-28 w-10 bg-[#E54529] md:-left-6 md:h-32 md:w-12"
+                style={{
+                  clipPath: `polygon(
+                    0% 12%, 0% 88%,
+                    10% 88%, 10% 92%, 25% 92%, 25% 96%, 42% 96%, 42% 100%, 58% 100%, 58% 96%, 75% 96%, 75% 92%, 90% 92%, 90% 88%, 100% 88%,
+                    100% 12%, 90% 12%, 90% 8%, 75% 8%, 75% 4%, 58% 4%, 58% 0%, 42% 0%, 42% 4%, 25% 4%, 25% 8%, 10% 8%, 10% 12%
+                  )`,
+                }}
+              />
             </div>
 
             {/* Perfil ideal + lista posicionado debajo del texto descriptivo */}
@@ -112,8 +137,8 @@ export function ProfileSection() {
             </div>
           </div>
 
-          {/* Foto artista con decoraciones */}
-          <div className="relative ml-5 w-56 md:w-64">
+          {/* Foto artista con decoraciones (solo desktop, en mobile va arriba de Perfil ideal) */}
+          <div className="relative ml-5 hidden w-56 md:w-64 lg:block">
             <div className="relative aspect-[3/4] overflow-hidden">
               <Image
                 src="/karol g.jpg"

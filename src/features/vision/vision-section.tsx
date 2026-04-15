@@ -51,18 +51,18 @@ export function VisionSection() {
             nivel global.
           </p>
           <p className="font-sans text-base leading-snug text-white lg:whitespace-nowrap md:text-lg">
-            Creemos en el talento auténtico y en la estrategia<br />
-            correcta para que llegue más lejos, más rápido.
+            Creemos en el talento auténtico y en la estrategia<br className="hidden lg:inline" />
+            {" "}correcta para que llegue más lejos, más rápido.
           </p>
         </div>
       </div>
 
       {/* Título grande NUESTRA VISIÓN abajo */}
       <div className="mx-auto mt-8 max-w-7xl text-center md:mt-16">
-        <h3 className="relative -mb-[10vw] inline-block font-black uppercase leading-[0.75] tracking-tight text-[#E54529] text-[14vw] lg:whitespace-nowrap">
+        <h3 className="relative -mb-[10vw] inline-block -translate-x-6 font-black uppercase leading-[0.75] tracking-tight text-[#E54529] text-[14vw] md:-translate-x-12 lg:-translate-x-20 lg:whitespace-nowrap xl:-translate-x-24">
           Nuestra visión
           <span
-            className="hidden lg:absolute lg:z-20 lg:block lg:h-14 lg:w-40 lg:bg-[#5BA4D9] xl:h-16 xl:w-48"
+            className="absolute z-20 block h-6 w-16 bg-[#5BA4D9] md:h-10 md:w-28 lg:h-14 lg:w-40 xl:h-16 xl:w-48"
             style={{
               clipPath: STAIRS_CLIP,
               right: "-25%",
