@@ -16,7 +16,7 @@ export function FocusHeroSection() {
           {/* Sombra oscura sobre la imagen para resaltar el texto */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
           {/* Frase en la esquina inferior izquierda */}
-          <p className="absolute bottom-1 left-1 font-sans text-xs font-bold uppercase tracking-[0.2em] text-[#5BA4D9] md:bottom-1 md:left-1 md:text-base md:tracking-[0.25em]">
+          <p className="absolute bottom-1 left-1 font-sans text-xs font-bold uppercase tracking-[0.2em] text-[#37ace2] md:bottom-1 md:left-1 md:text-base md:tracking-[0.25em]">
             El talento no se fabrica. Se cataliza.
           </p>
         </div>

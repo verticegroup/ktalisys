@@ -50,7 +50,7 @@ function ProjectCard({
       </div>
 
       {/* Tag naranja */}
-      <div className="bg-[#E54529] px-4 py-2 text-center">
+      <div className="bg-[#f86a0b] px-4 py-2 text-center">
         <span className="font-sans text-xs font-bold uppercase tracking-[0.25em] text-white md:text-sm">
           {tag}
         </span>
@@ -84,12 +84,12 @@ export function ProjectsCardsSection() {
     <section className="relative overflow-hidden bg-black px-6 py-10 md:px-16 md:py-20 lg:px-24">
       <div className="mx-auto max-w-7xl">
         {/* "PROYECTOS" gigante al fondo */}
-        <h2 className="relative z-0 text-center font-black uppercase leading-[0.9] tracking-tight text-[#E54529] text-5xl sm:text-7xl md:text-9xl lg:text-[10rem] xl:text-[12rem]">
+        <h2 className="relative z-0 text-center font-black uppercase leading-[0.9] tracking-tight text-[#f86a0b] text-5xl sm:text-7xl md:text-9xl lg:text-[10rem] xl:text-[12rem]">
           Proyectos
         </h2>
 
         {/* Cards superpuestas a la mitad del texto */}
-        <div className="relative z-10 mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-5 sm:-mt-12 md:-mt-24 md:gap-8 md:grid-cols-2 lg:-mt-28">
+        <div className="relative z-10 mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-5 sm:-mt-4 md:-mt-8 md:gap-8 md:grid-cols-2 lg:-mt-10">
           {PROJECTS.map((project, i) => (
             <ProjectCard key={i} {...project} />
           ))}

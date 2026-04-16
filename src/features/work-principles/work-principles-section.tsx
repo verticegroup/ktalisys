@@ -64,7 +64,7 @@ function Principle({
 }) {
   return (
     <div className="text-left">
-      <h3 className="font-sans text-sm font-bold leading-tight text-white md:text-base">
+      <h3 className="font-sans text-sm font-semibold leading-tight text-white md:text-base">
         {title}
       </h3>
       <p className="font-sans text-sm leading-tight text-white md:text-base">
@@ -76,7 +76,7 @@ function Principle({
 
 export function WorkPrinciplesSection() {
   return (
-    <section className="relative overflow-hidden bg-black px-6 py-10 md:px-16 md:py-24 lg:px-24">
+    <section className="relative overflow-hidden bg-black px-6 pt-10 pb-1 md:px-16 md:pt-24 md:pb-10 lg:px-24">
       <div className="relative mx-auto max-w-7xl">
         {/* Título gigante centrado */}
         <h2 className="relative z-10 text-center font-black uppercase leading-[0.95] tracking-tight text-[#E54529] text-5xl md:text-6xl lg:text-7xl xl:text-8xl">

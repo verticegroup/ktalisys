@@ -12,8 +12,8 @@ function KtalisysLogo() {
 
 export function ProjectsIntroSection() {
   return (
-    <section className="bg-black px-6 pt-20 pb-10 md:pt-36 md:pb-16 md:px-16 lg:px-24">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-16">
+    <section className="bg-black pt-32 pb-10 md:pt-36 md:pb-16">
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-6 px-5 lg:grid-cols-2 lg:gap-16 lg:px-10">
         {/* Columna izquierda: logo + título + párrafos (centrados en la columna) */}
         <div className="flex flex-col items-center gap-5 text-left md:gap-8">
           <KtalisysLogo />

@@ -46,7 +46,7 @@ export function Footer() {
           </div>
 
           {/* Columna 2: Menú */}
-          <div className="flex flex-col gap-3 lg:gap-4 lg:border-r lg:border-white/20 lg:px-10 lg:pb-12">
+          <div className="flex flex-col gap-3 border-t border-white/20 pt-6 lg:gap-4 lg:border-t-0 lg:border-r lg:border-white/20 lg:px-10 lg:pt-0 lg:pb-12">
             <h4 className="text-center font-sans text-xs uppercase tracking-[0.3em] text-white">
               Menú
             </h4>
@@ -65,7 +65,7 @@ export function Footer() {
           </div>
 
           {/* Columna 3: CTA */}
-          <div className="flex flex-col justify-center gap-3 lg:gap-4 lg:pb-12 lg:pl-10">
+          <div className="flex flex-col justify-center gap-1 border-t border-white/20 pt-6 lg:border-t-0 lg:pt-0 lg:pb-12 lg:pl-10">
             <h4 className="font-sans text-sm font-semibold uppercase leading-snug tracking-widest text-white">
               ¿Tienes un proyecto musical?
             </h4>
@@ -76,7 +76,7 @@ export function Footer() {
             </p>
             <a
               href="#aplicar"
-              className="inline-flex items-center gap-2 font-sans text-sm font-semibold uppercase tracking-widest text-[#5BA4D9] transition-colors hover:text-[#4a93c8] md:text-base"
+              className="mt-3 inline-flex items-center gap-2 font-sans text-sm uppercase tracking-widest text-[#5BA4D9] transition-colors hover:text-[#4a93c8] md:text-base lg:mt-4"
             >
               Aplica proyecto
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
@@ -93,7 +93,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-5 md:gap-8 md:grid-cols-3 md:items-center">
           {/* Contacto */}
           <div className="flex flex-col gap-2 md:flex-row md:items-start md:gap-8">
-            <h5 className="shrink-0 font-sans text-xs uppercase tracking-[0.3em] text-white/70">
+            <h5 className="shrink-0 font-sans text-xs uppercase tracking-[0.3em] text-white">
               Contacto
             </h5>
             <div className="flex flex-col font-sans text-sm text-white">
@@ -105,7 +105,7 @@ export function Footer() {
           {/* Tagline con estrella */}
           <div className="flex items-center justify-center gap-4">
             <StarIcon className="h-10 w-10 text-[#E54529]" />
-            <p className="whitespace-pre-line font-sans text-xs font-semibold uppercase leading-tight tracking-[0.2em] text-white md:text-sm">
+            <p className="whitespace-pre-line font-sans text-xs font-semibold uppercase leading-tight tracking-[0.2em] text-[#E25822] md:text-sm">
               {"El talento\nno se fabrica.\nSe cataliza."}
             </p>
           </div>
@@ -125,7 +125,7 @@ export function Footer() {
         <div className="my-4 border-t border-white/20" />
 
         {/* Copyright */}
-        <p className="text-center font-sans text-sm text-white/80">
+        <p className="text-center font-sans text-sm text-white">
           © 2026 Ktalisys. All rights reserved. Music Development & Strategy Company.
         </p>
       </div>

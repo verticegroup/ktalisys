@@ -12,7 +12,7 @@ export function WorkIntroSection() {
         {/* 3 columnas: párrafo / imagen / frase */}
         <div className="mt-6 grid grid-cols-1 items-center gap-5 md:mt-12 md:grid-cols-[1fr_auto_1fr] md:gap-4">
           {/* Párrafo izquierda */}
-          <p className="font-sans text-sm leading-snug text-white md:justify-self-end md:whitespace-nowrap md:text-base">
+          <p className="text-center font-sans text-sm leading-snug text-white md:text-left md:justify-self-end md:whitespace-nowrap md:text-base">
             En Ktalisys trabajamos con método,<br />
             criterio y visión de mercado para<br />
             acelerar proyectos musicales con<br />
@@ -45,7 +45,7 @@ export function WorkIntroSection() {
           </div>
 
           {/* Frase derecha */}
-          <p className="whitespace-pre-line font-sans text-sm font-semibold uppercase leading-tight tracking-widest text-white md:justify-self-start md:text-base">
+          <p className="whitespace-pre-line text-center font-sans text-sm font-semibold uppercase leading-tight tracking-widest text-white md:text-left md:justify-self-start md:text-base">
             {"El talento no\nse improvisa.\nSe estructura."}
           </p>
         </div>

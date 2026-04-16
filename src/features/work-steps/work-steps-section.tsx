@@ -65,7 +65,7 @@ const STEPS = [
 
 export function WorkStepsSection() {
   return (
-    <section className="bg-black py-10 md:py-16">
+    <section className="bg-black pb-0 md:pb-0">
       <div className="grid grid-cols-1 gap-0 lg:grid-cols-2">
         {/* Columna izquierda: cuadro naranja que llega al borde izquierdo */}
         <div className="relative overflow-hidden bg-[#E54529] min-h-[300px] md:min-h-[500px]">
@@ -73,11 +73,11 @@ export function WorkStepsSection() {
             src="/jessi uribe.png"
             alt="Jessi Uribe"
             fill
-            className="object-cover"
+            className="object-contain object-bottom"
             priority
           />
           <div className="absolute inset-0 flex items-end justify-center p-0  md:p-0">
-            <h2 className="whitespace-pre-line text-left font-black uppercase leading-[0.95] tracking-tight text-white text-4xl md:text-5xl lg:text-6xl">
+            <h2 className="whitespace-pre-line text-left font-black uppercase leading-[0.95] tracking-tight text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
               {"Así\ncatalizamos\nel talento"}
             </h2>
           </div>
@@ -91,13 +91,14 @@ export function WorkStepsSection() {
           </h3>
 
           {/* Tabla 2x2 — líneas internas continuas */}
-          <div className="grid grid-cols-1 divide-y divide-white/20 border border-white/20 sm:grid-cols-2 sm:divide-x sm:divide-y-0 md:border-y md:border-l md:border-r-0">
+          <div className="grid grid-cols-1 divide-y divide-white/20 border border-white/20 sm:grid-cols-2 sm:divide-x sm:divide-y-0 sm:border-r-0 md:border-y md:border-l md:border-r-0">
             {STEPS.map((step, index) => {
               const isTopRow = index < 2;
+              const isTopRight = index === 1;
               return (
                 <div
                   key={step.number}
-                  className={`flex flex-col gap-2 p-4 md:gap-3 md:p-8 ${isTopRow ? "sm:border-b sm:border-white/20" : ""}`}
+                  className={`flex flex-col gap-2 p-4 md:gap-3 md:p-8 ${isTopRow ? "sm:border-b sm:border-white/20" : ""} ${isTopRight ? "md:border-r-0" : ""}`}
                 >
                   <h4 className="font-sans text-xs font-semibold uppercase leading-tight tracking-[0.2em] text-white">
                     {step.number} —

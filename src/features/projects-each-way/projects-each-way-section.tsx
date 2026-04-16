@@ -40,7 +40,7 @@ export function ProjectsEachWaySection() {
 
         {/* Centro: bloque ondulado azul */}
         <ScallopedBlock>
-          <p className="whitespace-pre-line text-center font-sans text-xs font-bold uppercase leading-tight tracking-[0.2em] text-[#E54529] md:text-sm">
+          <p className="whitespace-pre-line text-center font-sans text-xs font-bold uppercase leading-tight tracking-[0.2em] text-[#f86a0b] md:text-sm">
             {"Cada proyecto\ntiene su propio\ncamino."}
           </p>
         </ScallopedBlock>

@@ -1,8 +1,8 @@
 export function FocusIndustrySection() {
   return (
-    <section className="bg-black">
-      <div className="mx-auto max-w-7xl px-6 pt-10 pb-6 md:pt-16 md:px-16 lg:px-24">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-16">
+    <section className="bg-black px-6 pt-10 pb-6 md:pt-16 md:px-16 lg:px-24">
+      <div className="mx-auto max-w-5xl">
+        <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2 lg:gap-16">
           {/* Columna izquierda: título grande */}
           <h2 className="whitespace-pre-line font-black uppercase leading-[1] tracking-tight text-white text-3xl md:text-5xl lg:text-5xl xl:text-6xl">
             {"Un enfoque claro para\nuna industria compleja"}
@@ -10,11 +10,11 @@ export function FocusIndustrySection() {
 
           {/* Columna derecha: párrafos */}
           <div className="flex flex-col gap-5">
-            <p className="whitespace-pre-line font-sans text-base leading-snug text-white md:text-lg">
-              {"La industria musical es competitiva, cambiante y\nsaturada. El talento por sí solo ya no es suficiente."}
+            <p className="font-sans text-base leading-snug text-white md:text-lg">
+              La industria musical es competitiva, cambiante y saturada. El talento por sí solo ya no es suficiente.
             </p>
-            <p className="whitespace-pre-line font-sans text-base leading-snug text-white md:text-lg">
-              {"En Ktalisys trabajamos desde un enfoque integral\ndonde la creatividad necesita dirección y la\nestrategia necesita sensibilidad artística."}
+            <p className="font-sans text-base leading-snug text-white md:text-lg">
+              En Ktalisys trabajamos desde un enfoque integral donde la creatividad necesita dirección y la estrategia necesita sensibilidad artística.
             </p>
           </div>
         </div>

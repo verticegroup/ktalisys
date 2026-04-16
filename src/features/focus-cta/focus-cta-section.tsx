@@ -12,24 +12,22 @@ export function FocusCtaSection() {
       <div className="mx-auto flex max-w-5xl justify-center">
         {/* Forma escalonada blanca con contenido adentro */}
         <div
-          className="relative flex min-h-[420px] w-full items-center bg-white sm:min-h-[460px] md:h-80 md:min-h-0 lg:h-96"
+          className="relative flex w-full flex-col bg-white py-10 md:h-80 md:min-h-0 md:flex-row md:items-center md:py-0 lg:h-96"
           style={{ clipPath: STAIRS_CLIP }}
         >
-          {/* Imagen al lado derecho (absoluta para que no desplace el texto)
-              En mobile aparece más pequeña en la esquina inferior derecha con baja opacidad
-              para no tapar el texto. En md+ ocupa la mitad derecha como en desktop. */}
-          <div className="pointer-events-none absolute right-0 bottom-0 h-40 w-1/2 opacity-40 sm:h-48 md:inset-y-0 md:h-auto md:opacity-100">
+          {/* Imagen: en mobile ocupa la mitad inferior como bloque propio; en md+ absoluta a la derecha */}
+          <div className="pointer-events-none relative mt-4 h-56 w-full md:absolute md:inset-y-0 md:right-0 md:mt-0 md:h-auto md:w-1/2">
             <Image
               src="/YED.png"
               alt="YED"
               fill
-              className="object-cover object-right"
+              className="object-contain object-bottom md:object-cover md:object-right"
             />
           </div>
 
-          {/* Contenido en el lado izquierdo, centrado verticalmente */}
-          <div className="relative z-10 flex flex-col gap-3 px-8 md:gap-4 md:pl-32 md:pr-8 lg:pl-40">
-            <h3 className="whitespace-pre-line font-sans text-sm font-semibold uppercase leading-snug tracking-[0.3em] text-[#E54529] md:text-base">
+          {/* Contenido */}
+          <div className="relative z-10 order-first flex flex-col gap-3 px-[16%] md:order-none md:gap-4 md:px-0 md:pl-32 md:pr-8 lg:pl-40">
+            <h3 className="whitespace-pre-line font-sans text-base font-semibold uppercase leading-snug tracking-[0.3em] text-[#fd300f] md:text-base">
               {"Si este enfoque\nresuena contigo,\nconversemos"}
             </h3>
             <p className="whitespace-pre-line font-sans text-base font-bold leading-snug text-black md:text-lg">
@@ -38,13 +36,13 @@ export function FocusCtaSection() {
             <div className="relative flex items-center gap-4">
               <a
                 href="#aplicar"
-                className="inline-flex bg-[#5BA4D9] px-5 py-3 font-black uppercase leading-tight text-black transition-colors hover:bg-[#4a93c8] text-base md:text-lg"
+                className="inline-flex bg-[#5BA4D9] pl-2 pr-5 py-1 font-black uppercase leading-tight text-black transition-colors hover:bg-[#37ace2] text-2xl md:text-xl"
               >
                 <span className="whitespace-pre-line">{"Aplicar\nproyecto"}</span>
               </a>
               {/* Flecha naranja desde el botón */}
               <svg
-                className="h-14 w-28 text-[#E54529] md:h-16 md:w-32"
+                className="h-14 w-28 text-[#fd300f] md:h-16 md:w-32"
                 viewBox="0 0 120 60"
                 fill="none"
                 stroke="currentColor"

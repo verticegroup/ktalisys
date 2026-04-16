@@ -1,8 +1,8 @@
 export function ContactFormSection() {
   return (
-    <section className="relative overflow-hidden bg-black px-6 pt-16 pb-10 md:px-16 md:pt-32 md:pb-16 lg:px-24">
+    <section className="relative overflow-hidden bg-black px-6 pt-28 pb-10 md:px-16 md:pt-44 md:pb-16 lg:px-24">
       {/* Título gigante de fondo */}
-      <h1 className="relative z-0 text-center font-black uppercase leading-[0.95] tracking-tight text-[#E54529] text-[14vw] md:whitespace-nowrap">
+      <h1 className="relative z-0 text-center font-black uppercase leading-[0.95] tracking-tight text-[#f86a0b] text-[14vw] md:whitespace-nowrap">
         Hablemos de tu proyecto
       </h1>
 
@@ -24,22 +24,22 @@ export function ContactFormSection() {
           </p>
           <p className="whitespace-pre-line font-sans text-sm leading-snug md:text-base">
             {"Si deseas aplicar formalmente con tu proyecto\nmusical, te recomendamos usar el formulario\nde "}
-            <a href="#aplicar" className="underline">Aplicar</a>
+            <a href="#aplicar" className="text-[#37ace2] underline">Aplicar</a>
             {"."}
           </p>
 
           <div className="mt-4 flex flex-col gap-1">
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.25em] text-[#E54529] md:text-sm">
+            <p className="font-sans text-xs font-semibold uppercase tracking-[0.25em] text-[#f86a0b] md:text-sm">
               Información de contacto
             </p>
-            <a href="mailto:contacto@ktalisys.com" className="inline-flex items-center gap-2 font-sans text-sm text-[#E54529] md:text-base">
+            <a href="mailto:contacto@ktalisys.com" className="inline-flex items-center gap-2 font-sans text-sm text-[#f86a0b] md:text-base">
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="5" width="18" height="14" rx="2" />
                 <path d="M3 7l9 6 9-6" />
               </svg>
               contacto@ktalisys.com
             </a>
-            <p className="inline-flex items-center gap-2 font-sans text-sm text-[#E54529] md:text-base">
+            <p className="inline-flex items-center gap-2 font-sans text-sm text-[#f86a0b] md:text-base">
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 22s-7-7-7-12a7 7 0 1114 0c0 5-7 12-7 12z" />
                 <circle cx="12" cy="10" r="2.5" />
@@ -51,7 +51,7 @@ export function ContactFormSection() {
           {/* Frase blanca en negrita con burst */}
           <p className="mt-6 whitespace-pre-line font-black uppercase leading-tight tracking-tight text-white text-2xl md:text-6xl">
             {"No todas las conversaciones\nson el inicio de un proyecto.\nPero toda buena conversación\nempieza con claridad."}
-            <svg className="inline-block h-5 w-5 align-middle text-[#E54529]" viewBox="0 0 24 24" fill="currentColor">
+            <svg className="inline-block h-5 w-5 align-middle text-[#f86a0b]" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 0l2.5 7.5L22 5.5l-5 5L24 12l-7.5 2.5L22 18.5l-7.5-2L12 24l-2.5-7.5L2 18.5l5-4L0 12l7.5-2.5L2 5.5l7.5 2L12 0z" />
             </svg>
           </p>
@@ -62,7 +62,7 @@ export function ContactFormSection() {
           </p>
           <a
             href="#aplicar"
-            className="inline-flex w-fit items-center bg-[#5BA4D9] px-6 py-3 font-black uppercase leading-tight text-black transition-colors hover:bg-[#4a93c8] text-base md:text-lg"
+            className="inline-flex w-fit items-center bg-[#5BA4D9] px-3 py-1 font-black uppercase leading-tight text-black transition-colors hover:bg-[#4a93c8] text-2xl md:text-3xl"
           >
             Aplicar proyecto
           </a>
@@ -104,7 +104,7 @@ export function ContactFormSection() {
           <div className="flex items-center gap-4">
             <button
               type="submit"
-              className="bg-[#5BA4D9] px-8 py-3 font-black uppercase tracking-wider text-black transition-colors hover:bg-[#4a93c8] text-base md:text-lg"
+              className="bg-[#5BA4D9] px-3 py-1 font-black uppercase leading-tight tracking-wider text-black transition-colors hover:bg-[#4a93c8] text-2xl md:text-3xl"
             >
               Enviar
             </button>

@@ -16,7 +16,7 @@ export function WorkBeforeSection() {
         </div>
 
         {/* Franja naranja con título */}
-        <div className="relative z-10 h-10 bg-[#E54529] px-4 md:z-auto md:h-12">
+        <div className="relative z-10 h-10 bg-[#f96b09] px-4 md:z-auto md:h-12">
           <h2 className="flex h-full items-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white md:text-base md:tracking-[0.3em]">
             Nuestro trabajo empieza antes de la música
           </h2>
@@ -33,16 +33,16 @@ export function WorkBeforeSection() {
         </div>
 
         {/* Párrafos debajo de la franja */}
-        <div className="mt-6 flex flex-col gap-4 md:mt-8 md:gap-5 md:max-w-[55%]">
-          <p className="font-sans text-sm leading-snug text-white lg:whitespace-nowrap md:text-base">
-            Antes de producir, lanzar o promocionar, entendemos<br />
-            el proyecto. Analizamos el talento, el momento, el<br />
-            mercado y el objetivo real.
+        <div className="relative z-20 mt-6 flex flex-col gap-4 md:z-auto md:mt-8 md:gap-5 md:max-w-[55%]">
+          <p className="font-sans text-sm leading-snug text-white md:text-base lg:whitespace-nowrap">
+            Antes de producir, lanzar o promocionar, entendemos<br className="hidden md:inline" />
+            {" "}el proyecto. Analizamos el talento, el momento, el<br className="hidden md:inline" />
+            {" "}mercado y el objetivo real.
           </p>
-          <p className="font-sans text-sm leading-snug text-white lg:whitespace-nowrap md:text-base">
-            Ktalisys no ofrece soluciones genéricas. Diseñamos<br />
-            caminos claros para proyectos que quieren crecer<br />
-            con sentido.
+          <p className="font-sans text-sm leading-snug text-white md:text-base lg:whitespace-nowrap">
+            Ktalisys no ofrece soluciones genéricas. Diseñamos<br className="hidden md:inline" />
+            {" "}caminos claros para proyectos que quieren crecer<br className="hidden md:inline" />
+            {" "}con sentido.
           </p>
         </div>
       </div>

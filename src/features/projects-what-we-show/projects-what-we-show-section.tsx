@@ -52,7 +52,7 @@ export function ProjectsWhatWeShowSection() {
     <section className="bg-black px-6 pt-10 pb-6 md:pt-20 md:px-16 lg:px-24">
       <div className="mx-auto max-w-7xl">
         {/* Título */}
-        <h2 className="text-center font-black uppercase leading-[1] tracking-tight text-[#E54529] text-3xl md:text-5xl lg:text-6xl">
+        <h2 className="text-center font-black uppercase leading-[1] tracking-tight text-[#f86a0b] text-3xl md:text-5xl lg:text-6xl">
           Qué mostramos en cada proyecto
         </h2>
 

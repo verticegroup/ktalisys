@@ -22,8 +22,8 @@ function BurstShape({
 
 export function ProjectsCuratorshipSection() {
   return (
-    <section className="overflow-hidden bg-black px-6 py-10 md:py-16 md:px-16 lg:pr-24 lg:pl-80">
-      <div className="mx-auto max-w-7xl">
+    <section className="overflow-hidden bg-black py-10 md:py-16">
+      <div className="mx-auto w-full max-w-6xl px-5 lg:px-10">
         {/* Título superior */}
         <h2 className="text-center font-sans text-sm font-semibold uppercase tracking-[0.3em] text-white md:text-base">
           Curaduría antes que exhibición
@@ -44,7 +44,7 @@ export function ProjectsCuratorshipSection() {
 
             {/* Burst + frase superpuesta (el texto se extiende fuera de la forma) */}
             <div className="absolute -right-6 -bottom-6 md:-right-20 md:-bottom-10">
-              <BurstShape className="h-32 w-32 text-[#E54529] md:h-40 md:w-40 lg:h-48 lg:w-48" />
+              <BurstShape className="h-32 w-32 text-[#f86a0b] md:h-40 md:w-40 lg:h-48 lg:w-48" />
               <p className="absolute top-1/2 left-0 z-10 -translate-y-1/2 font-sans text-[10px] font-bold uppercase leading-tight tracking-widest text-white md:whitespace-nowrap md:text-sm">
                 No todos los proyectos<br />son públicos.<br />No todos los procesos<br />necesitan exposición.
               </p>

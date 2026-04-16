@@ -8,7 +8,7 @@ export function FocusPillarsSection() {
         <div className="grid grid-cols-[2fr_1fr] gap-3">
           {/* Sección izquierda (2/3): título arriba + 3 imágenes abajo en fila */}
           <div className="flex flex-col gap-3">
-            <h2 className="whitespace-pre-line font-black uppercase leading-[1] tracking-tight text-[#5BA4D9] text-3xl md:text-5xl lg:text-7xl">
+            <h2 className="whitespace-pre-line font-black uppercase leading-[1] tracking-tight text-[#5BA4D9] text-5xl sm:text-6xl md:text-5xl lg:text-7xl">
               {"Los pilares que\nsostienen cada\nproyecto"}
             </h2>
             <div className="grid grid-cols-3 gap-3">
@@ -39,8 +39,8 @@ export function FocusPillarsSection() {
             </div>
           </div>
 
-          {/* Imagen 4 — derecha, más alta que todas */}
-          <div className="relative h-full min-h-[320px]">
+          {/* Imagen 4 — derecha, misma altura que título + fila de imágenes */}
+          <div className="relative h-full">
             <Image
               src="/carlos vives.png"
               alt="Carlos Vives"
