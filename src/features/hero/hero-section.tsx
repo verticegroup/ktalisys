@@ -58,21 +58,12 @@ export function HeroSection() {
           <HeroHeadingLeft />
 
           <div className="relative w-full max-w-[240px] self-center sm:max-w-[280px] md:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
-            <div
-              className="relative h-[115px] sm:h-[135px] md:h-[140px] lg:h-[160px] xl:h-[190px] 2xl:h-[220px]"
-              style={{
-                clipPath: `polygon(
-                  12% 0%, 88% 0%,
-                  88% 10%, 92% 10%, 92% 25%, 96% 25%, 96% 42%, 100% 42%, 100% 58%, 96% 58%, 96% 75%, 92% 75%, 92% 90%, 88% 90%, 88% 100%,
-                  12% 100%, 12% 90%, 8% 90%, 8% 75%, 4% 75%, 4% 58%, 0% 58%, 0% 42%, 4% 42%, 4% 25%, 8% 25%, 8% 10%, 12% 10%
-                )`,
-              }}
-            >
+            <div className="relative h-[115px] sm:h-[135px] md:h-[140px] lg:h-[160px] xl:h-[190px] 2xl:h-[220px]">
               <Image
-                src="/Piso 21.png"
-                alt="Piso 21"
+                src="/hero.png"
+                alt="Hero"
                 fill
-                className="object-cover object-top"
+                className="object-contain object-center"
                 priority
               />
             </div>

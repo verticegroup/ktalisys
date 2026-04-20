@@ -1,12 +1,19 @@
-import { Logo } from "@/components/ui/logo";
+import Image from "next/image";
 
 export function WorkCtaSection() {
   return (
     <section className="-mt-px bg-white px-6 pt-0 pb-10 md:mt-0 md:px-16 md:pt-4 md:pb-20 lg:px-24">
       <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-16">
-        {/* Columna izquierda: logo grande */}
+        {/* Columna izquierda: gráfico Recurso 23 */}
         <div className="flex justify-center md:justify-start">
-          <Logo className="h-56 w-56 text-black md:h-64 md:w-64" />
+          <Image
+            src="/Recurso%2023.png"
+            alt=""
+            aria-hidden
+            width={320}
+            height={320}
+            className="h-44 w-44 object-contain md:h-52 md:w-52"
+          />
         </div>
 
         {/* Columna derecha: título + texto + botón */}

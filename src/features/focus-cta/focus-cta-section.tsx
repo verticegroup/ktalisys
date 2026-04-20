@@ -1,20 +1,18 @@
 import Image from "next/image";
 
-const STAIRS_CLIP = `polygon(
-  12% 0%, 88% 0%,
-  88% 10%, 92% 10%, 92% 25%, 96% 25%, 96% 42%, 100% 42%, 100% 58%, 96% 58%, 96% 75%, 92% 75%, 92% 90%, 88% 90%, 88% 100%,
-  12% 100%, 12% 90%, 8% 90%, 8% 75%, 4% 75%, 4% 58%, 0% 58%, 0% 42%, 4% 42%, 4% 25%, 8% 25%, 8% 10%, 12% 10%
-)`;
-
 export function FocusCtaSection() {
   return (
     <section className="bg-black px-6 py-10 md:px-16 md:py-20 lg:px-24">
       <div className="mx-auto flex max-w-5xl justify-center">
-        {/* Forma escalonada blanca con contenido adentro */}
-        <div
-          className="relative flex w-full flex-col bg-white py-10 md:h-80 md:min-h-0 md:flex-row md:items-center md:py-0 lg:h-96"
-          style={{ clipPath: STAIRS_CLIP }}
-        >
+        {/* Forma escalonada (Recurso 31) con contenido adentro */}
+        <div className="relative flex w-full flex-col py-10 md:h-80 md:min-h-0 md:flex-row md:items-center md:py-0 lg:h-96">
+          <Image
+            src="/Recurso%2031.png"
+            alt=""
+            aria-hidden
+            fill
+            className="pointer-events-none absolute inset-0 z-0 object-fill"
+          />
           {/* Imagen: en mobile ocupa la mitad inferior como bloque propio; en md+ absoluta a la derecha */}
           <div className="pointer-events-none relative mt-4 h-56 w-full md:absolute md:inset-y-0 md:right-0 md:mt-0 md:h-auto md:w-1/2">
             <Image

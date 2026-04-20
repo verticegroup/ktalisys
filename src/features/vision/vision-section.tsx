@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function StarShape({
   className,
   style,
@@ -29,9 +31,13 @@ export function VisionSection() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 lg:grid-cols-3 lg:items-start lg:gap-12">
         {/* Columna izquierda: forma naranja + frase */}
         <div className="flex flex-col gap-4 md:gap-8">
-          <span
-            className="block h-10 w-28 bg-[#E54529] md:h-12 md:w-32"
-            style={{ clipPath: STAIRS_CLIP }}
+          <Image
+            src="/Recurso%2010.png"
+            alt=""
+            aria-hidden
+            width={160}
+            height={60}
+            className="h-10 w-28 object-contain md:h-12 md:w-32"
           />
           <p className="ml-auto whitespace-pre-line font-sans text-sm font-semibold uppercase leading-tight tracking-widest text-white md:text-base">
             {"El talento\nno se fabrica.\nSe cataliza."}
@@ -40,7 +46,14 @@ export function VisionSection() {
 
         {/* Columna centro: estrella alineada al inicio del segundo párrafo */}
         <div className="flex justify-center lg:mt-32">
-          <StarShape className="h-20 w-20 text-white md:h-36 md:w-36" />
+          <Image
+            src="/Recurso%2011.png"
+            alt=""
+            aria-hidden
+            width={160}
+            height={160}
+            className="h-20 w-20 object-contain md:h-36 md:w-36"
+          />
         </div>
 
         {/* Columna derecha: textos */}

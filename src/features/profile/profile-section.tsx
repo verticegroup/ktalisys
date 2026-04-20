@@ -22,7 +22,7 @@ const profileItems = [
 
 export function ProfileSection() {
   return (
-    <section className="relative bg-[#5BA4D9] px-6 py-10 md:py-16 md:px-16 lg:px-32">
+    <section className="relative bg-[#37abe2] px-6 py-10 md:py-16 md:px-16 lg:px-32">
       <div className="mx-auto flex max-w-4xl flex-col gap-6 lg:flex-row lg:items-start lg:gap-16">
         {/* Columna izquierda: título + foto */}
         <div className="flex flex-col gap-5 lg:w-1/2 lg:gap-6">
@@ -32,9 +32,14 @@ export function ProfileSection() {
               <h2 className="whitespace-pre-line text-3xl leading-[0.95] font-black uppercase tracking-tight text-black md:text-5xl lg:text-6xl">
                 {"No trabajamos con todos.\ny eso es intencional."}
               </h2>
-              {/* Estrella/sol rojo - sobre el final de "intencional" */}
-              <StarShape
-                className="absolute bottom-0 left-[calc(43%+2.5rem)] right-auto z-30 block h-10 w-10 text-[#E54529] md:left-[calc(43%+4rem)] md:h-12 md:w-12 lg:left-[calc(43%+5.5rem)] lg:h-14 lg:w-14 xl:h-16 xl:w-16"
+              {/* Gráfico Recurso 4 - sobre el final de "intencional" */}
+              <Image
+                src="/Recurso%204.png"
+                alt=""
+                aria-hidden
+                width={64}
+                height={64}
+                className="absolute bottom-0 left-[calc(43%+3.5rem)] right-auto z-30 block h-10 w-10 object-contain md:left-[calc(43%+5rem)] md:h-12 md:w-12 lg:left-[calc(43%+7rem)] lg:h-14 lg:w-14 xl:h-16 xl:w-16"
               />
             </div>
             {/* Texto descriptivo al lado de la estrella */}
@@ -42,16 +47,14 @@ export function ProfileSection() {
               className="relative z-30 mt-6 lg:absolute lg:mt-0 lg:[bottom:-0.5rem] lg:[left:calc(44%+10rem)]"
             >
               <p className="relative font-sans text-sm leading-snug text-white md:text-base lg:whitespace-nowrap lg:leading-tight">
-                {/* Mancha naranja en la esquina superior derecha del texto */}
-                <span
-                  className="absolute -right-4 -top-8 z-0 block h-6 w-20 rotate-12 bg-[#E54529] md:-right-12 md:-top-9 md:h-8 md:w-24 lg:-top-10 lg:-right-24 xl:-top-12 xl:h-10 xl:w-28"
-                  style={{
-                    clipPath: `polygon(
-                      12% 0%, 88% 0%,
-                      88% 10%, 92% 10%, 92% 25%, 96% 25%, 96% 42%, 100% 42%, 100% 58%, 96% 58%, 96% 75%, 92% 75%, 92% 90%, 88% 90%, 88% 100%,
-                      12% 100%, 12% 90%, 8% 90%, 8% 75%, 4% 75%, 4% 58%, 0% 58%, 0% 42%, 4% 42%, 4% 25%, 8% 25%, 8% 10%, 12% 10%
-                    )`,
-                  }}
+                {/* Gráfico Recurso 5 al lado derecho del texto */}
+                <Image
+                  src="/Recurso%205.png"
+                  alt=""
+                  aria-hidden
+                  width={240}
+                  height={80}
+                  className="absolute -right-14 -top-10 z-0 block h-10 w-32 object-contain md:-right-24 md:-top-12 md:h-12 md:w-40 lg:-top-14 lg:-right-40 lg:h-14 lg:w-44 xl:-top-16 xl:h-16 xl:w-52"
                 />
                 <span className="relative z-10">
                   Ktalisys trabaja con artistas y proyectos que entienden<br className="hidden lg:inline" />
@@ -71,16 +74,21 @@ export function ProfileSection() {
                   className="object-cover"
                 />
               </div>
-              <StarShape className="absolute -right-8 bottom-4 z-30 h-16 w-16 text-[#E54529] md:-right-10 md:h-20 md:w-20" />
-              <span
-                className="absolute -left-5 top-8 z-30 h-28 w-10 bg-[#E54529] md:-left-6 md:h-32 md:w-12"
-                style={{
-                  clipPath: `polygon(
-                    0% 12%, 0% 88%,
-                    10% 88%, 10% 92%, 25% 92%, 25% 96%, 42% 96%, 42% 100%, 58% 100%, 58% 96%, 75% 96%, 75% 92%, 90% 92%, 90% 88%, 100% 88%,
-                    100% 12%, 90% 12%, 90% 8%, 75% 8%, 75% 4%, 58% 4%, 58% 0%, 42% 0%, 42% 4%, 25% 4%, 25% 8%, 10% 8%, 10% 12%
-                  )`,
-                }}
+              <Image
+                src="/Recurso%208.png"
+                alt=""
+                aria-hidden
+                width={96}
+                height={96}
+                className="absolute -right-8 bottom-4 z-30 h-16 w-16 object-contain md:-right-10 md:h-20 md:w-20"
+              />
+              <Image
+                src="/Recurso%207.png"
+                alt=""
+                aria-hidden
+                width={80}
+                height={160}
+                className="absolute -left-5 top-8 z-30 h-28 w-10 object-contain md:-left-6 md:h-32 md:w-12"
               />
             </div>
 
@@ -88,21 +96,14 @@ export function ProfileSection() {
             <div
               className="relative z-30 mt-5 flex flex-col gap-3 lg:absolute lg:mt-0 lg:[left:calc(44%+10rem)] lg:[top:calc(100%+1.5rem)]"
             >
-              <div className="relative inline-flex self-start px-4 py-1.5 lg:-ml-14">
-                <svg
-                  className="absolute inset-0 h-full w-full"
-                  viewBox="0 0 120 40"
-                  preserveAspectRatio="none"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                >
-                  <path
-                    d="M8 6 C20 3, 50 2, 80 4 C100 5, 115 7, 116 14 C117 22, 112 30, 95 33 C70 36, 40 37, 15 34 C6 33, 3 28, 4 20 C5 12, 7 8, 10 5"
-                    className="text-black"
-                  />
-                </svg>
+              <div className="relative inline-flex self-start px-5 py-2 lg:-ml-14">
+                <Image
+                  src="/Recurso%206.png"
+                  alt=""
+                  aria-hidden
+                  fill
+                  className="absolute -inset-x-1 -inset-y-0.5 object-fill"
+                />
                 <span className="relative font-sans text-sm uppercase tracking-widest text-white md:text-base">
                   Perfil ideal
                 </span>
@@ -119,21 +120,14 @@ export function ProfileSection() {
                 este no es el lugar.<br />
                 Si buscas dirección, sí.
               </p>
-              {/* Logo Ktalisys - vertical, orientado hacia arriba */}
-              <div
-                className="hidden text-black lg:absolute lg:flex lg:items-center lg:gap-2 lg:[bottom:0] lg:[left:calc(100%+8rem)]"
-                style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
-              >
-                <span className="text-3xl font-bold italic tracking-tight md:text-4xl">Ktalisys</span>
-                <svg
-                  className="h-10 w-10 md:h-12 md:w-12"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                >
-                  <path d="M8 32V8h4v10l10-10h6L17 19l12 13h-6L13 20v12H8z" fill="currentColor" />
-                  <rect x="1" y="1" width="38" height="38" rx="4" stroke="currentColor" strokeWidth="2" fill="none" />
-                </svg>
-              </div>
+              {/* Logo Ktalisys (Recurso 9) - vertical, parte inferior derecha */}
+              <Image
+                src="/Recurso%209.png"
+                alt="Ktalisys"
+                width={80}
+                height={220}
+                className="hidden object-contain lg:absolute lg:block lg:h-24 lg:w-auto lg:[bottom:0] lg:[left:calc(100%+8rem)] xl:h-28"
+              />
             </div>
           </div>
 
@@ -147,29 +141,27 @@ export function ProfileSection() {
                 className="object-cover"
               />
             </div>
-            {/* Estrella sobresaliendo a la mitad en la esquina inferior derecha */}
-            <StarShape className="absolute -right-8 bottom-4 z-30 h-16 w-16 text-[#E54529] md:-right-10 md:h-20 md:w-20" />
-            {/* Forma vertical escalonada sobresaliendo en la esquina superior izquierda */}
-            <span
-              className="absolute -left-5 top-8 z-30 h-28 w-10 bg-[#E54529] md:-left-6 md:h-32 md:w-12"
-              style={{
-                clipPath: `polygon(
-                  0% 12%, 0% 88%,
-                  10% 88%, 10% 92%, 25% 92%, 25% 96%, 42% 96%, 42% 100%, 58% 100%, 58% 96%, 75% 96%, 75% 92%, 90% 92%, 90% 88%, 100% 88%,
-                  100% 12%, 90% 12%, 90% 8%, 75% 8%, 75% 4%, 58% 4%, 58% 0%, 42% 0%, 42% 4%, 25% 4%, 25% 8%, 10% 8%, 10% 12%
-                )`,
-              }}
+            {/* Gráfico Recurso 8 sobresaliendo en la esquina inferior derecha */}
+            <Image
+              src="/Recurso%208.png"
+              alt=""
+              aria-hidden
+              width={96}
+              height={96}
+              className="absolute -right-8 bottom-4 z-30 h-16 w-16 object-contain md:-right-10 md:h-20 md:w-20"
+            />
+            {/* Gráfico Recurso 7 sobresaliendo en la esquina superior izquierda */}
+            <Image
+              src="/Recurso%207.png"
+              alt=""
+              aria-hidden
+              width={80}
+              height={160}
+              className="absolute -left-5 top-8 z-30 h-28 w-10 object-contain md:-left-6 md:h-32 md:w-12"
             />
           </div>
         </div>
 
-      </div>
-
-      {/* Pie de sección - vacío, logo movido junto al texto */}
-      <div className="hidden">
-        <div className="flex items-center gap-2 text-black">
-          <span className="text-2xl font-bold italic tracking-tight">Ktalisys</span>
-        </div>
       </div>
     </section>
   );

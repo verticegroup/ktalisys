@@ -2,34 +2,15 @@ import Image from "next/image";
 
 function ScallopedBlock({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative">
-      {/* Olas arriba */}
-      <svg
-        className="absolute -top-4 left-0 w-full"
-        viewBox="0 0 200 16"
-        preserveAspectRatio="none"
-        height="16"
-      >
-        <path
-          d="M0 16 L20 16 A16 16 0 0 1 52 16 A16 16 0 0 1 84 16 A16 16 0 0 1 116 16 A16 16 0 0 1 148 16 A16 16 0 0 1 180 16 L200 16 Z"
-          fill="#5BA7DA"
-        />
-      </svg>
-      <div className="bg-[#5BA7DA] px-3 py-2">
-        {children}
-      </div>
-      {/* Olas abajo */}
-      <svg
-        className="absolute -bottom-4 left-0 w-full rotate-180"
-        viewBox="0 0 200 16"
-        preserveAspectRatio="none"
-        height="16"
-      >
-        <path
-          d="M0 16 L20 16 A16 16 0 0 1 52 16 A16 16 0 0 1 84 16 A16 16 0 0 1 116 16 A16 16 0 0 1 148 16 A16 16 0 0 1 180 16 L200 16 Z"
-          fill="#5BA7DA"
-        />
-      </svg>
+    <div className="relative inline-block px-6 py-5 md:px-8 md:py-6">
+      <Image
+        src="/Recurso%203.png"
+        alt=""
+        aria-hidden
+        fill
+        className="absolute inset-0 -z-10 object-fill"
+      />
+      <div className="relative">{children}</div>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const MENU_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Cómo trabajamos", href: "#como-trabajamos" },
@@ -17,11 +19,13 @@ function StarIcon({ className }: { className?: string }) {
 
 function KtalisysLogo() {
   return (
-    <div className="inline-flex items-center rounded-lg border-2 border-white px-4 py-2">
-      <span className="font-sans text-2xl font-bold tracking-tight text-white md:text-3xl">
-        Ktalisys<sup className="text-sm">®</sup>
-      </span>
-    </div>
+    <Image
+      src="/Recurso%2012.png"
+      alt="Ktalisys"
+      width={220}
+      height={80}
+      className="h-10 w-auto object-contain md:h-12"
+    />
   );
 }
 
@@ -102,9 +106,16 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Tagline con estrella */}
+          {/* Tagline con figura */}
           <div className="flex items-center justify-center gap-4">
-            <StarIcon className="h-10 w-10 text-[#E54529]" />
+            <Image
+              src="/Recurso%204.png"
+              alt=""
+              aria-hidden
+              width={80}
+              height={80}
+              className="h-10 w-10 object-contain"
+            />
             <p className="whitespace-pre-line font-sans text-xs font-semibold uppercase leading-tight tracking-[0.2em] text-[#E25822] md:text-sm">
               {"El talento\nno se fabrica.\nSe cataliza."}
             </p>

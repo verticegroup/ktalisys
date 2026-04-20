@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function ContactFormSection() {
   return (
     <section className="relative overflow-hidden bg-black px-6 pt-28 pb-10 md:px-16 md:pt-44 md:pb-16 lg:px-24">
@@ -51,9 +53,14 @@ export function ContactFormSection() {
           {/* Frase blanca en negrita con burst */}
           <p className="mt-6 whitespace-pre-line font-black uppercase leading-tight tracking-tight text-white text-2xl md:text-6xl">
             {"No todas las conversaciones\nson el inicio de un proyecto.\nPero toda buena conversación\nempieza con claridad."}
-            <svg className="inline-block h-5 w-5 align-middle text-[#f86a0b]" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0l2.5 7.5L22 5.5l-5 5L24 12l-7.5 2.5L22 18.5l-7.5-2L12 24l-2.5-7.5L2 18.5l5-4L0 12l7.5-2.5L2 5.5l7.5 2L12 0z" />
-            </svg>
+            <Image
+              src="/Recurso%204.png"
+              alt=""
+              aria-hidden
+              width={80}
+              height={80}
+              className="inline-block h-10 w-10 align-middle object-contain md:h-14 md:w-14"
+            />
           </p>
 
           {/* CTA final */}

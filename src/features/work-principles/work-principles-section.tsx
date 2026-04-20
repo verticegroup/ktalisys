@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function StarShape({
   className,
   style,
@@ -90,10 +92,19 @@ export function WorkPrinciplesSection() {
           </span>
           <br />
           <span className="relative inline-block">
-            {/* Forma naranja ondulada debajo-izquierda de "Guían" */}
+            {/* Placeholder invisible para mantener el espacio vertical original */}
             <ScallopedPill
-              color="#E54529"
-              className="absolute -bottom-5 -left-2 z-30 h-4 w-14 md:-bottom-10 md:-left-10 md:h-7 md:w-28"
+              color="transparent"
+              className="invisible absolute -bottom-5 -left-2 z-30 h-4 w-14 md:-bottom-10 md:-left-10 md:h-7 md:w-28"
+            />
+            {/* Gráfico Recurso 10 encima de "Guián" */}
+            <Image
+              src="/Recurso%2010.png"
+              alt=""
+              aria-hidden
+              width={160}
+              height={80}
+              className="pointer-events-none absolute -top-2 left-0 z-30 h-12 w-14 object-contain md:-top-4 md:left-0 md:h-16 md:w-28"
             />
             Guían cada proyecto
             {/* Forma blanca vertical ondulada a la derecha */}

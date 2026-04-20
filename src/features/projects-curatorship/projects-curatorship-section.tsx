@@ -42,10 +42,17 @@ export function ProjectsCuratorshipSection() {
               />
             </div>
 
-            {/* Burst + frase superpuesta (el texto se extiende fuera de la forma) */}
+            {/* Recurso 8 + frase superpuesta (el texto se extiende fuera de la forma) */}
             <div className="absolute -right-6 -bottom-6 md:-right-20 md:-bottom-10">
-              <BurstShape className="h-32 w-32 text-[#f86a0b] md:h-40 md:w-40 lg:h-48 lg:w-48" />
-              <p className="absolute top-1/2 left-0 z-10 -translate-y-1/2 font-sans text-[10px] font-bold uppercase leading-tight tracking-widest text-white md:whitespace-nowrap md:text-sm">
+              <Image
+                src="/Recurso%208.png"
+                alt=""
+                aria-hidden
+                width={192}
+                height={192}
+                className="pointer-events-none h-24 w-24 object-contain md:h-28 md:w-28 lg:h-36 lg:w-36"
+              />
+              <p className="absolute top-[60%] left-4 z-10 -translate-y-1/2 font-sans text-[10px] font-bold uppercase leading-tight tracking-widest text-white md:left-8 md:top-[62%] md:whitespace-nowrap md:text-sm">
                 No todos los proyectos<br />son públicos.<br />No todos los procesos<br />necesitan exposición.
               </p>
             </div>

@@ -2,11 +2,13 @@ import Image from "next/image";
 
 function KtalisysLogo() {
   return (
-    <div className="inline-flex items-center rounded-lg border-2 border-[#5BA4D9] px-4 py-2">
-      <span className="font-sans text-2xl font-bold tracking-tight text-[#5BA4D9] md:text-3xl">
-        Ktalisys<sup className="text-sm">®</sup>
-      </span>
-    </div>
+    <Image
+      src="/Recurso%2032.png"
+      alt="Ktalisys"
+      width={220}
+      height={80}
+      className="h-14 w-auto object-contain md:h-16"
+    />
   );
 }
 
