@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export function WorkCtaSection() {
   return (
-    <section className="-mt-px bg-white px-6 pt-0 pb-10 md:mt-0 md:px-16 md:pt-4 md:pb-20 lg:px-24">
-      <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-16">
+    <section className="-mt-px bg-white px-6 pt-10 pb-14 md:mt-0 md:px-16 md:pt-4 md:pb-20 lg:px-24">
+      <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16">
         {/* Columna izquierda: gráfico Recurso 23 */}
         <div className="flex justify-center md:justify-start">
           <Image

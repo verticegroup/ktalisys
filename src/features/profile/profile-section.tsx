@@ -22,7 +22,7 @@ const profileItems = [
 
 export function ProfileSection() {
   return (
-    <section className="relative bg-[#37abe2] px-6 py-10 md:py-16 md:px-16 lg:px-32">
+    <section className="relative overflow-hidden bg-[#37abe2] px-6 py-10 md:py-16 md:px-16 lg:px-32">
       <div className="mx-auto flex max-w-4xl flex-col gap-6 lg:flex-row lg:items-start lg:gap-16">
         {/* Columna izquierda: título + foto */}
         <div className="flex flex-col gap-5 lg:w-1/2 lg:gap-6">
@@ -54,7 +54,7 @@ export function ProfileSection() {
                   aria-hidden
                   width={240}
                   height={80}
-                  className="absolute -right-14 -top-10 z-0 block h-10 w-32 object-contain md:-right-24 md:-top-12 md:h-12 md:w-40 lg:-top-14 lg:-right-40 lg:h-14 lg:w-44 xl:-top-16 xl:h-16 xl:w-52"
+                  className="absolute right-0 -top-10 z-0 block h-10 w-28 object-contain md:-right-24 md:-top-12 md:h-12 md:w-40 lg:-top-14 lg:-right-40 lg:h-14 lg:w-44 xl:-top-16 xl:h-16 xl:w-52"
                 />
                 <span className="relative z-10">
                   Ktalisys trabaja con artistas y proyectos que entienden<br className="hidden lg:inline" />

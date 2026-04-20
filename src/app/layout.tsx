@@ -28,7 +28,7 @@ export default function RootLayout({
       lang="es"
       className={`${gillSans.variable} ${gilroy.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-black font-gill-sans text-white">
+      <body className="min-h-full overflow-x-hidden bg-black font-gill-sans text-white">
         {children}
       </body>
     </html>

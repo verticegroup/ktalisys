@@ -4,7 +4,7 @@ import Image from "next/image";
 function HeroHeadingLeft() {
   return (
     <div className="flex flex-col justify-center">
-      <h1 className="whitespace-normal text-left text-4xl leading-[1.1] font-black uppercase tracking-tight text-white md:whitespace-pre-line md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+      <h1 className="whitespace-normal text-center text-4xl leading-[1.1] font-black uppercase tracking-tight text-white md:whitespace-pre-line md:text-left md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
         {"Aceleramos el\ntalento musical"}
       </h1>
     </div>
@@ -13,7 +13,7 @@ function HeroHeadingLeft() {
 
 function HeroHeadingRight() {
   return (
-    <div className="flex flex-col justify-center text-left">
+    <div className="flex flex-col justify-center text-center md:text-left">
       <p className="whitespace-normal text-4xl leading-[1.1] font-black uppercase tracking-tight text-white md:whitespace-pre-line md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
         {"Hacia el\nmercado"}
       </p>
@@ -54,11 +54,11 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-black px-5 pt-24 pb-10 md:pt-44 md:pb-0 lg:px-10">
       <div className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-8 md:gap-10">
-        <div className="flex flex-col items-start justify-between gap-5 md:flex-row md:items-center md:gap-5">
+        <div className="flex flex-col items-center justify-between gap-0 md:flex-row md:items-center md:gap-5">
           <HeroHeadingLeft />
 
-          <div className="relative w-full max-w-[240px] self-center sm:max-w-[280px] md:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
-            <div className="relative h-[115px] sm:h-[135px] md:h-[140px] lg:h-[160px] xl:h-[190px] 2xl:h-[220px]">
+          <div className="relative my-4 w-full max-w-[340px] self-center sm:my-6 sm:max-w-[380px] md:my-0 md:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+            <div className="relative aspect-[803/255] md:aspect-auto md:h-[140px] lg:h-[160px] xl:h-[190px] 2xl:h-[220px]">
               <Image
                 src="/hero.png"
                 alt="Hero"
